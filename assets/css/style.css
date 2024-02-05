@@ -1,15 +1,23 @@
 .menu-home {
     background-color: aqua;
+    padding: 10px;
+    text-align: center;
 }
 
 .menu-info{
     background-color: orange;
+    padding: 10px;
+    text-align: center;
 }
 
 .menu-menu{
     background-color: yellow;
+    padding: 10px;
+    text-align: center;
 }
 
 .menu-booking{
     background-color: greenyellow;
+    padding: 10px;
+    text-align: center;
 }
