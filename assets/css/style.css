@@ -23,7 +23,8 @@
     width: fit-content;
     position: absolute;
     top: 0;
-    right: 0;
+    right: 50px;
     display: flex;
     flex-wrap: wrap;
+    list-style: none;
 }
