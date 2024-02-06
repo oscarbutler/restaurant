@@ -22,9 +22,21 @@
     font-weight: 600;
     width: fit-content;
     position: absolute;
-    top: 0;
-    right: 50px;
-    display: flex;
+    top: -50px;
+    right: 1vh;
     flex-wrap: wrap;
     list-style: none;
+}
+
+header {
+    box-shadow: 0px 5px 5px #000000;
+    background-color: black;
+}
+
+h1 {
+    color: white;
+}
+
+a {
+    color: white;
 }
