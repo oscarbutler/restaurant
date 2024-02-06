@@ -4,20 +4,30 @@
     text-align: center;
 }
 
-.menu-info{
+.menu-info {
     background-color: orange;
     padding: 10px;
     text-align: center;
 }
 
-.menu-menu{
+.menu-menu {
     background-color: yellow;
     padding: 10px;
     text-align: center;
 }
 
-.menu-booking{
+.menu-booking {
     background-color: greenyellow;
     padding: 10px;
     text-align: center;
+}
+
+#menu {
+    font-weight: 600;
+    width: fit-content;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
