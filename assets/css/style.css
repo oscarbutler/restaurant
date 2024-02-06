@@ -1,23 +1,23 @@
 .menu-home {
-    background-color: aqua;
+    background-color: rgb(255, 169, 119);
     padding: 10px;
     text-align: center;
 }
 
 .menu-info {
-    background-color: orange;
+    background-color: rgb(255, 169, 119);
     padding: 10px;
     text-align: center;
 }
 
 .menu-menu {
-    background-color: yellow;
+    background-color: rgb(255, 169, 119);
     padding: 10px;
     text-align: center;
 }
 
 .menu-booking {
-    background-color: greenyellow;
+    background-color: rgb(255, 169, 119);
     padding: 10px;
     text-align: center;
 }
