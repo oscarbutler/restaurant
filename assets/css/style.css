@@ -56,3 +56,24 @@ a {
     margin-bottom: -150px;
 }
 
+footer{
+    width: 100%;
+}
+
+#links {
+    text-align: center;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+}
+
+#links i {
+    font-size: 150%;
+    padding: 10%;
+    color: rgb(61, 60, 60);
+}
