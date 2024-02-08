@@ -115,11 +115,12 @@ footer{
 
 .ul-options {
     list-style: none;
-    display: flex;
-    justify-content: space-around;
     background-color: rgba(225, 179, 130, 1);
     color: #fff;
-    font-size: 20px;
+    font-size: 15px;
+    text-align: center;
+    padding: 25px;
+    border: 1px black;
 }
 
 .menu-menu:hover .menu-list {
@@ -127,4 +128,5 @@ footer{
 }
 .menu-list{
     display: none;
+    color: aqua;
 }
