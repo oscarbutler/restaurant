@@ -32,7 +32,7 @@
 
 header {
     box-shadow: 0px 5px 5px #000000;
-    background-color: black;
+    background-color: rgba(225,179,130,1);
 }
 
 h1 {
@@ -71,7 +71,7 @@ footer{
     position: sticky;
     bottom: 0;
     width: 100%;
-    background-color: black;
+    background-color: rgba(225,179,130,1);
 }
 
 #links i {
