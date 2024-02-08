@@ -96,3 +96,19 @@ footer{
     margin-top: 170px;
     padding: 20px;
 }
+
+.response-message {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    color: #000000;
+    background-color: rgba(225,179,130,1);
+    width: fit-content;
+    padding: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 200px;
+    margin-bottom: 110px;
+    text-decoration: underline;
+    border-radius: 12px;
+}
