@@ -84,3 +84,15 @@ footer{
     padding: 10%;
     color: rgb(255, 255, 255);
 }
+
+.booking-message{
+    background-color: rgba(225,179,130,1);
+    width: fit-content;
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-top: 170px;
+    padding: 20px;
+}
