@@ -27,7 +27,7 @@
     font-weight: 600;
     width: fit-content;
     position: absolute;
-    top: -50px;
+    top: -70px;
     right: 1vh;
     flex-wrap: wrap;
     list-style: none;
@@ -112,3 +112,14 @@ footer{
     text-decoration: underline;
     border-radius: 12px;
 }
+
+.ul-options {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(225, 179, 130, 1);
+    color: #fff;
+    font-size: 20px;
+}
+
+
