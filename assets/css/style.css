@@ -40,10 +40,12 @@ header {
 
 h1 {
     color: white;
+    font-family: 'Dancing Script', 'Times New Roman', Times, serif;
+    font-size: 60px;
 }
 
 a {
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 /*Info Page*/
@@ -80,5 +82,5 @@ footer{
 #links i {
     font-size: 150%;
     padding: 10%;
-    color: rgb(61, 60, 60);
+    color: rgb(255, 255, 255);
 }
