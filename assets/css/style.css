@@ -131,7 +131,7 @@ footer{
     color: aqua;
 }
 
-.main-courses, .starter-menu{
+.main-courses, .starter-menu, .desserts-menu, .drinks-menu{
     text-align: center;
     margin-top: 20px;
     text-decoration: underline;
