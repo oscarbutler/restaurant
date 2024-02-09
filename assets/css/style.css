@@ -31,6 +31,8 @@
     right: 1vh;
     flex-wrap: wrap;
     list-style: none;
+    font-family: 'Dancing Script';
+    font-size: x-large;
 }
 
 header {
