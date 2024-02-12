@@ -148,3 +148,12 @@ footer{
 .drinks-heading{
     font-weight: 800;
 }
+
+.submit-button{
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgba(225, 179, 130, 1);
+    align-content: center;
+    text-decoration: underline;
+    padding: 8px;
+}
