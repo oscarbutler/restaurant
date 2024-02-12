@@ -156,4 +156,6 @@ footer{
     align-content: center;
     text-decoration: underline;
     padding: 8px;
+    margin-top: 50px;
+    display: flex;
 }
