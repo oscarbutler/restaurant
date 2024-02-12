@@ -159,3 +159,10 @@ footer{
     margin-top: 50px;
     display: flex;
 }
+
+.open-times{
+    font-family: 'Dancing Script', Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    display: flex;
+    margin-top: 20px;
+}
