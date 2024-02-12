@@ -160,7 +160,7 @@ footer{
     display: flex;
 }
 
-.open-times{
+.open-times, .contact-info{
     font-family: 'Dancing Script', Arial, Helvetica, sans-serif;
     font-weight: 800;
     display: flex;
@@ -170,4 +170,8 @@ footer{
 .opening-times-text{
     font-family: 'Dancing Script', Arial, Helvetica, sans-serif;
     font-size: x-large;
+}
+
+ .contact-info-text{
+    font-family: 'Dancing Script', Arial, Helvetica, sans-serif;
 }
