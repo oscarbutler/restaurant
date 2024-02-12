@@ -166,3 +166,8 @@ footer{
     display: flex;
     margin-top: 20px;
 }
+
+.opening-times-text{
+    font-family: 'Dancing Script', Arial, Helvetica, sans-serif;
+    font-size: x-large;
+}
