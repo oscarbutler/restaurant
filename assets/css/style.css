@@ -127,6 +127,7 @@ footer{
 
 .menu-menu:hover .menu-list {
     display: block;
+
 }
 .menu-list{
     display: none;
@@ -183,3 +184,7 @@ footer{
     margin-top: 20px;
 }
 
+.dining{
+    width: 100%;
+    height: 6 00px;
+}
