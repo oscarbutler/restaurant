@@ -130,7 +130,6 @@ footer{
 }
 .menu-list{
     display: none;
-    color: aqua;
 }
 
 .main-courses, .starter-menu, .desserts-menu, .drinks-menu{
@@ -158,6 +157,7 @@ footer{
     padding: 8px;
     margin-top: 50px;
     display: flex;
+    margin-bottom: 20px;
 }
 
 .open-times, .contact-info{
@@ -176,9 +176,10 @@ footer{
     font-family: 'Dancing Script', Arial, Helvetica, sans-serif;
 }
 
-.booking-heading{
+.booking-heading, .welcome-heading{
     font-family: 'Dancing Script', Arial, Helvetica, sans-serif;
     font-weight: 800;
     text-align: center;
     margin-top: 20px;
 }
+
