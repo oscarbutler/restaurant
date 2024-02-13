@@ -175,3 +175,10 @@ footer{
  .contact-info-text{
     font-family: 'Dancing Script', Arial, Helvetica, sans-serif;
 }
+
+.booking-heading{
+    font-family: 'Dancing Script', Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 20px;
+}
