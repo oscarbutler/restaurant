@@ -21,4 +21,5 @@ from booking.views import message
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('booking/', message, name='booking'),
+    path('', views.home, name='home'),
 ]
