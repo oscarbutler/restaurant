@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-u_yff%tq+!9f^1dzfs4mc802_sc@#$-ry!^wu4i*k2q^ogsx9b'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['8000-oscarbutler-restaurant-m3d50u4ixqt.ws-eu110.gitpod.io',
                 '.herokuapp.com']
@@ -89,6 +89,12 @@ WSGI_APPLICATION = 'restaurant.wsgi.application'
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.codeanyapp.com",
+    "https://*.herokuapp.com",
+    "https://8000-oscarbutler-restaurant-m3d50u4ixqt.ws-eu110.gitpod.io"
+]
 
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
