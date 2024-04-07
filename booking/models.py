@@ -1,5 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.views import generic
+# from .models import BookingSystem
 
 # Create your models here.
 class BookingSystem(models.Model):
@@ -9,3 +11,5 @@ class BookingSystem(models.Model):
     Email = models.EmailField()
     Date = models.DateField()
     Time = models.TimeField()
+    Number_Of_People = models.IntegerField()
+
