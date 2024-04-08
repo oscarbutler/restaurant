@@ -11,3 +11,6 @@ def home(request):
 
 def menu(request):
     return render(request, 'menu.html')
+
+def info(request):
+    return render(request, 'info.html')
