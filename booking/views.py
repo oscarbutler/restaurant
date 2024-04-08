@@ -14,3 +14,18 @@ def menu(request):
 
 def info(request):
     return render(request, 'info.html')
+
+def menu_main(request):
+    return render(request, 'menu-main.html')
+
+def menu_starters(request):
+    return render(request, 'menu-starters.html')
+
+def menu_desserts(request):
+    return render(request, 'menu-desserts.html')
+
+def booking(request):
+    return render(request, 'booking.html')
+
+def menu_drinks(request):
+    return render(request, 'menu-drinks.html')
