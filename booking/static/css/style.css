@@ -199,3 +199,9 @@ footer{
     color: white;
 }
 
+.booking-options {
+    text-align: center;
+    padding: 10px;
+    font-family: 'Dancing Script';
+    font-size: xx-large;
+}
