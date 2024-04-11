@@ -16,6 +16,7 @@
 .menu-menu {
     padding: 10px;
     text-align: center;
+    color: #fff;
 }
 
 .menu-booking {
@@ -193,3 +194,8 @@ footer{
     text-align: center;
     font-size:large;
 }
+
+.menu-heading {
+    color: white;
+}
+
