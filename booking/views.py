@@ -29,3 +29,5 @@ def booking(request):
 
 def menu_drinks(request):
     return render(request, 'menu-drinks.html')
+
+def booking(request):
