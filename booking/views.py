@@ -35,4 +35,7 @@ def menu_drinks(request):
 def make_booking(request):
     if request.method == 'POST':
         form = reservationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('booking_success')
 
