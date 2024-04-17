@@ -1,7 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.contrib import admin
-from .forms import reservation
+from .forms import reservationForm
+from .models import BookingSystem
+
 # Create your views here.
 def message(request):
     return HttpResponse("Test")
@@ -30,6 +32,7 @@ def booking(request):
 def menu_drinks(request):
     return render(request, 'menu-drinks.html')
 
-def booking(request):
+def make_booking(request):
     if request.method == 'POST':
-        form = reservation(request.POST)
+        form = reservationForm(request.POST)
+
