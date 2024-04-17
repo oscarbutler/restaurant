@@ -38,4 +38,6 @@ def make_booking(request):
         if form.is_valid():
             form.save()
             return redirect('booking_success')
-
+    else:
+        form = reservationForm()
+    return render(request, 'make_booking.html', {'form': form})
