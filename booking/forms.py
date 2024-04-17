@@ -1,6 +1,9 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import BookingSystem
+from django import forms
 
-class reservation():
-    class meta:
-        fields = ['Name', 'Email', 'Phone_Number','Email','Date','Time','Number_Of_People']
+class reservationForm():
+    class Meta:
+        model = BookingSystem
+        fields = ['Name', 'Phone_number', 'Email', 'Date', 'Time', 'Number_Of_People', ]
