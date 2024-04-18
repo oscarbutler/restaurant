@@ -205,3 +205,8 @@ footer{
     font-family: 'Dancing Script';
     font-size: xx-large;
 }
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
