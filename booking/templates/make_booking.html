@@ -8,6 +8,77 @@
     <title>Make a Booking</title>
 </head>
 <body>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col heading bg">
+                    <h1 id="name">
+                        The Oak
+                    </h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <ul id="menu" class="list-inline col-md-12 d-flex justify-content-around">
+                        <li class="menu-home">
+                            <div class="">
+                                <a href="index.html">
+                                    <span class="span_menu_home">
+                                        Home
+                                    </span>
+                            </div>
+                            </a>
+                        </li>
+                        <li class="menu-info">
+                            <a href="info.html">
+                                <span>
+                                    Information
+                                </span>
+                            </a>
+                        </li>
+                        <li class="menu-menu">
+                            <a href="menu.html">
+                                <span>
+                                    Menu
+                                </span>
+                                <div class="menu-list">
+                                    <ul class="ul-options">
+                                        <li class="starters">
+                                            <a href="menu-starters.html">
+                                                Starters
+                                            </a>
+                                        </li>
+                                        <li class="mains">
+                                            <a href="menu-main.html">
+                                                Main Course
+                                            </a>
+                                        </li>
+                                        <li class="desserts">
+                                            <a href="menu-desserts.html">
+                                                Desserts
+                                            </a>
+                                        </li>
+                                        <li class="drinks">
+                                            <a href="menu-drinks.html">
+                                                Drinks
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="menu-booking">
+                            <a href="booking.html">
+                                <span>
+                                    Booking
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
     <h1 class="title">Reservation Form</h1>
     <form method="post">
         {% csrf_token %}
