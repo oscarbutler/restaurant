@@ -215,5 +215,11 @@ form {
     font-size: 30px;
     color: #000000;
     text-align: center;
-    padding: 30px;
+    padding: 5px;
+}
+
+input{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid white;
 }
