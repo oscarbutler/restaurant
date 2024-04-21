@@ -86,7 +86,7 @@
         </div>
     </header>
     <h1 class="title">Reservation Form</h1>
-    <form method="post">
+    <form method="post" class="booking-form">
         {% csrf_token %}
         {{ form.as_p }}
         <button type="submit">Submit</button>
