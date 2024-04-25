@@ -17,7 +17,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='BookingSystem',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                # ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('Name', models.CharField(max_length=50)),
                 ('Phone_number', models.CharField(max_length=20)),
                 ('Email', models.EmailField(max_length=254)),
