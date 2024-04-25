@@ -6,8 +6,8 @@ from django import forms
 class reservationForm(forms.ModelForm):
     class Meta:
         model = BookingSystem
-        fields = ['Name', 'Phone_number', 'Email', 'Date', 'Time', 'Number_Of_People', ]
+        fields = ['name', 'phone_number', 'email', 'date', 'time', 'number_of_people', ]
         widgets = {
-            'Date': forms.DateInput(attrs={'type': 'date'}),
-            'Time': forms.TimeInput(attrs={'type': 'time'}),
+            'date': forms.DateInput(attrs={'type': 'date'}),
+            'time': forms.TimeInput(attrs={'type': 'time'}),
         }
