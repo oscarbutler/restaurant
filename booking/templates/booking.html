@@ -10,7 +10,7 @@
     <link rel="icon" href="{%static 'images/icons8-oak-16.png'%}"/>
     <link rel="icon" href="{%static 'images/icons8-oak-32.png'%}"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <title>The Oak</title>
 </head>
@@ -39,7 +39,7 @@
                         </li>
                         <li class="menu-info">
                             <a href="info.html">
-                                <span>
+                                <span class="header-information">
                                     Information
                                 </span>
                             </a>
@@ -75,7 +75,7 @@
                         </li>
                         <li class="menu-booking">
                             <a href="booking.html">
-                                <span>
+                                <span class="header-booking">
                                     Booking
                                 </span>
                             </a>
@@ -89,7 +89,9 @@
         <h2 class="booking-heading">Booking</h2>
         <ul class="booking-options">
             <a href="make_booking.html">
-                <li class="bookings-choice">Make Booking</li>
+                <li class="bookings-choice">
+                    <div class="makebookings">Make Booking</div>
+                </li>
             </a>
             <li class="bookings-choice">View Bookings</li>
         </ul>
