@@ -230,3 +230,17 @@ input{
     padding: 8px;
     border: 1px solid black;
 }
+
+.login-register, .login-link {
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+    position: relative;
+    font-family: 'Dancing Script';
+    font-weight: 200;
+}
+
+.login-register{
+    text-decoration: underline;
+}
