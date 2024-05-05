@@ -244,3 +244,14 @@ input{
 .login-register{
     text-decoration: underline;
 }
+
+@media screen and (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+
+    #menu {
+        position: static;
+        width: 100%;
+    }
+}
