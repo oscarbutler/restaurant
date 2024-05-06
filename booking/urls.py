@@ -1,5 +1,6 @@
 from django.urls import path
 from . import views
+from .views import MakeBooking
 
 urlpatterns = [
     path('', views.home, name='home'),
@@ -11,5 +12,5 @@ urlpatterns = [
     path('menu-desserts.html', views.menu_desserts, name='menu-desserts'),
     path('index.html', views.home, name='home'),
     path('booking.html', views.booking, name='booking'),
-    path('make_booking.html', views.make_booking, name='make-booking'),
+    path('make_booking.html', MakeBooking.as_view(), name='make-booking'),
 ]

@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.views import View
 from django.http import HttpResponse
 from django.contrib import admin
 from .forms import reservationForm
@@ -32,12 +33,27 @@ def booking(request):
 def menu_drinks(request):
     return render(request, 'menu-drinks.html')
 
-def make_booking(request):
-    if request.method == 'POST':
+# def make_booking(request):
+#     if request.method == 'POST':
+#         form = reservationForm(request.POST)
+#         if form.is_valid():
+#             form.save()
+#             return redirect('booking_success')
+#     else:
+#         form = reservationForm()
+#     return render(request, 'make_booking.html', {'form': form})
+
+class MakeBooking(View):
+    def get(self, request, *args):
+        form = reservationForm()
+        print("USERNAME IN SESSION", request.user.username)
+        return render(request, 'make_booking.html', {'form': form})
+    def post(self, request, *args):
         form = reservationForm(request.POST)
+        print(form)
         if form.is_valid():
             form.save()
             return redirect('booking_success')
-    else:
-        form = reservationForm()
-    return render(request, 'make_booking.html', {'form': form})
+        else:
+            form = reservationForm()
+            return render(request, 'make_booking.html', {'form': form})
