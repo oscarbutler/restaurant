@@ -1,7 +1,7 @@
 from django.urls import path
 from . import views
 from .views import MakeBooking
-
+from .views import register
 urlpatterns = [
     path('', views.home, name='home'),
     path('menu.html', views.menu, name='menu'),
@@ -12,5 +12,7 @@ urlpatterns = [
     path('menu-desserts.html', views.menu_desserts, name='menu-desserts'),
     path('index.html', views.home, name='home'),
     path('booking.html', views.booking, name='booking'),
-    path('make_booking.html', MakeBooking.as_view(), name='make-booking'),
+    path('make_booking.html', views.MakeBooking, name='make-booking'),
+    path('register/', views.register, name="register"),
+    path('register/menu-drinks.html', views.menu_drinks, name='menu'),
 ]
