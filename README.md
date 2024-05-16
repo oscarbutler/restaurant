@@ -62,6 +62,9 @@ Happy coding!
 - CSS 
 - Javascript
 - Bootstrap
+- ElephantSql was used in order to host the database and store the data we will recieve.
+- Gitpod was used to write the code.
+- Git Hub was where the repository and code is stored.
 
 ## Testing
 
