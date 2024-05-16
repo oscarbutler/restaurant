@@ -44,7 +44,13 @@ Happy coding!
 
 ### First Time User
 
+- For a first time user should be able to navigate through the website with ease. This means that they should be able
+to go to each page and find information that they are looking for.
+
+
 ### Returning User
+
+- A returning user should be pleased with the way the website is arranged and the booking system should be efficient.
 
 ### Frequent User
 
