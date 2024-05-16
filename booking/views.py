@@ -4,6 +4,9 @@ from django.http import HttpResponse
 from django.contrib import admin
 from .forms import reservationForm
 from .models import BookingSystem
+from django.contrib.auth.forms import UserCreationForm
+from .forms import RegisterForm
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 def message(request):
@@ -33,15 +36,18 @@ def booking(request):
 def menu_drinks(request):
     return render(request, 'menu-drinks.html')
 
-# def make_booking(request):
-#     if request.method == 'POST':
-#         form = reservationForm(request.POST)
-#         if form.is_valid():
-#             form.save()
-#             return redirect('booking_success')
-#     else:
-#         form = reservationForm()
-#     return render(request, 'make_booking.html', {'form': form})
+@login_required
+def MakeBooking(request):
+    if request.method == 'POST':
+        form = reservationForm(request.POST)
+        if form.is_valid():
+            booking = form.save(commit=False)
+            booking.user_id = request.user.id 
+            booking.save()
+            return render(request, 'booking_success.html')
+    else:
+        form = reservationForm()
+    return render(request, 'make_booking.html', {'form': form})
 
 # class MakeBooking(View):
 #     def get(self, request, *args):
@@ -64,11 +70,6 @@ def menu_drinks(request):
 #             form = reservationForm()
 #             return render(request, 'make_booking.html', {'form': form})
 
-
-from django.contrib.auth.forms import UserCreationForm
-from .forms import RegisterForm
-
-
 def register(response):
     if response.method == "POST":
         form = RegisterForm(response.POST)
@@ -80,4 +81,3 @@ def register(response):
         form = RegisterForm()
 
         return render(response, "registration/register.html", {"form":form})
-
