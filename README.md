@@ -42,6 +42,12 @@ Happy coding!
 
 ## User
 
+### First Time User
+
+### Returning User
+
+### Frequent User
+
 ## Purpose
 
 ## Flowchart
