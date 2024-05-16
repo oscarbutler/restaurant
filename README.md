@@ -56,6 +56,8 @@ to go to each page and find information that they are looking for.
 
 ## Purpose
 
+- The purpose of this is to create a website for a restaurant that includes a way to book a reservation. 
+
 ## Flowchart
 
 ## Features
@@ -74,6 +76,13 @@ to go to each page and find information that they are looking for.
 
 ## Testing
 
+
+
 ## Bugs
+
+### Solved Bugs
+
+- There was a bug that I encountered which occured when I submitted the booking form. This showed an integrity
+error, in order to fix this I made the form require a login.
 
 ## Deployment
