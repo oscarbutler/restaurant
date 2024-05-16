@@ -56,6 +56,13 @@ Happy coding!
 
 ## Technology Used
 
+- Python was used to make the code.
+- Django
+- HTML
+- CSS 
+- Javascript
+- Bootstrap
+
 ## Testing
 
 ## Bugs
