@@ -49,3 +49,9 @@ Happy coding!
 ## Features
 
 ## Technology Used
+
+## Testing
+
+## Bugs
+
+## Deployment
