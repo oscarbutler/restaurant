@@ -2,6 +2,9 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .models import BookingSystem
 from django import forms
+from django.db import models
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.models import User
 
 class reservationForm(forms.ModelForm):
     class Meta:
@@ -11,3 +14,5 @@ class reservationForm(forms.ModelForm):
             'date': forms.DateInput(attrs={'type': 'date'}),
             'time': forms.TimeInput(attrs={'type': 'time'}),
         }
+
+class RegisterForm(UserCreationForm):
