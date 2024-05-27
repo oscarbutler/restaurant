@@ -17,3 +17,6 @@ class reservationForm(forms.ModelForm):
 
 class RegisterForm(UserCreationForm):
     email = models.EmailField()
+    
+    class Meta:
+
