@@ -12,7 +12,8 @@ class reservationForm(forms.ModelForm):
         fields = ['name', 'phone_number', 'email', 'date', 'time', 'number_of_people', ]
         widgets = {
             'date': forms.DateInput(attrs={'type': 'date'}),
-            'time': forms.TimeInput(attrs={'type': 'time'}),
+            'time': forms.Select(choices=different_times),
         }
 
 class RegisterForm(UserCreationForm):
+    email = models.EmailField()
