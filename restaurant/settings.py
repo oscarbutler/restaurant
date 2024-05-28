@@ -28,10 +28,11 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = 'django-insecure-u_yff%tq+!9f^1dzfs4mc802_sc@#$-ry!^wu4i*k2q^ogsx9b'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['8000-oscarbutler-restaurant-m3d50u4ixqt.ws-eu110.gitpod.io',
-                '.herokuapp.com']
+                '.herokuapp.com', '8000-oscarbutler-restaurant-m3d50u4ixqt.ws-eu112.gitpod.io', '8000-oscarbutler-restaurant-m3d50u4ixqt.ws-eu111.gitpod.io'
+                ,'8000-oscarbutler-restaurant-m3d50u4ixqt.ws-eu114.gitpod.io']
 
 
 # Application definition
@@ -94,7 +95,9 @@ DATABASES = {
 CSRF_TRUSTED_ORIGINS = [
     "https://*.codeanyapp.com",
     "https://*.herokuapp.com",
-    "https://8000-oscarbutler-restaurant-m3d50u4ixqt.ws-eu110.gitpod.io"
+    "https://8000-oscarbutler-restaurant-m3d50u4ixqt.ws-eu110.gitpod.io",
+    'https://8000-oscarbutler-restaurant-m3d50u4ixqt.ws-eu111.gitpod.io',
+    'https://8000-oscarbutler-restaurant-m3d50u4ixqt.ws-eu114.gitpod.io',
 ]
 
 SECRET_KEY = os.environ.get("SECRET_KEY")
@@ -139,3 +142,6 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOGIN_REDIRECT_URL = "/"
+LOGOUT_REDIRECT_URL = "/"
