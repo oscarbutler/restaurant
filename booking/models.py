@@ -11,7 +11,7 @@ class BookingSystem(models.Model):
     phone_number = models.CharField(max_length=20)
     email = models.EmailField()
     date = models.DateField()
-    time = models.CharField(choices=different_times)
-    number_of_people = models.CharField(choices=amount_of_people)
+    time = models.TimeField(choices=different_times)
+    number_of_people = models.IntegerField(choices=amount_of_people)
     
 
