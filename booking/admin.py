@@ -5,3 +5,5 @@ from .models import BookingSystem
 @admin.register(BookingSystem)
 class BookingAdmin(admin.ModelAdmin):
     list_display = ['name','date', 'time', 'number_of_people']
+    list_filter = ['date', 'time']
+    search_fields = ['name', 'phone_number', 'email', 'date']
