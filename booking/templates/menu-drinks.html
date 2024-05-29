@@ -86,6 +86,11 @@
         </div>
     </header>
     <main>
+        <div class="login-or-out">
+            {% if user.is_authenticated %}
+            {% else %}
+            {% endif %}
+        </div>
         <h2 class="drinks-menu">Drinks Menu</h2>
 
 
