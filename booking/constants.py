@@ -1,3 +1,4 @@
+from datetime import time
 
 different_times = [
     (time(13, 0), '13:00'),
