@@ -5,8 +5,10 @@ let availableTimes = [
 function Times(){
     const chooseTime = document.getElementById("id_time")
 }
+function Slideshow(){
+    const SlideshowImages = [
+        "{% static 'images/dining-image.jpg' %}",
+        "{% static 'images/steak-image.jpg' %}",
+    ]
 
-const SlideshowImages = [
-    "{% static 'images/dining-image.jpg' %}",
-    "{% static 'images/steak-image.jpg' %}",
-]
+}
