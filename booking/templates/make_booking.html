@@ -86,6 +86,13 @@
         </div>
     </header>
     <h1 class="title">Reservation Form</h1>
+    <div class="login-or-out">
+        {% if user.is_authenticated %}
+        <p>Logged in as "{{ user.username }}"<a href="{% url 'logout' %}" class="logoutlink"> Logout</a></p>       
+        {% else %}
+        <p>Please <a href="{% url 'login' %}" class="logoutlink">Login</a> here</p>
+        {% endif %}
+    </div>
     <form method="post" class="booking-form">
         {% csrf_token %}
         {{ form.as_p }}
