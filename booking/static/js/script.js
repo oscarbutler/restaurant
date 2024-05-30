@@ -7,5 +7,6 @@ function Times(){
 }
 
 const SlideshowImages = [
-
+    "{% static 'images/dining-image.jpg' %}",
+    "{% static 'images/steak-image.jpg' %}",
 ]
