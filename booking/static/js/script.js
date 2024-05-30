@@ -5,3 +5,7 @@ let availableTimes = [
 function Times(){
     const chooseTime = document.getElementById("id_time")
 }
+
+const SlideshowImages = [
+
+]
