@@ -64,3 +64,5 @@ def register(response):
 def login(request):
     return render(request, 'login.html')
 
+def view_bookings(request):
+
