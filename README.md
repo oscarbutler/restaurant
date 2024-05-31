@@ -60,6 +60,14 @@ to go to each page and find information that they are looking for.
 
 ## Flowchart
 
+## Wireframes
+
+### Desktop Device
+
+### Tablet Device
+
+### Mobile Device
+
 ## Features
 
 - A booking system is one of the main features. This allows the user to easily make a reservation at this restaurant
@@ -97,7 +105,7 @@ it will show you if you are logged in and an option to logout, all the user need
 
 ## Testing
 
-- Please visit [Testing.md](Testing.md).
+- Please visit [TESTING.md](TESTING.md).
 
 ## Bugs
 
