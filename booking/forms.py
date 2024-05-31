@@ -5,6 +5,8 @@ from django import forms
 from django.db import models
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
+from django.forms import Select
+from .constants import different_times
 
 class reservationForm(forms.ModelForm):
     class Meta:
@@ -14,6 +16,8 @@ class reservationForm(forms.ModelForm):
             'date': forms.DateInput(attrs={'type': 'date'}),
             'time': forms.Select(choices=different_times),
         }
+
+    def TableLimit(self):
 
 class RegisterForm(UserCreationForm):
     email = models.EmailField()
