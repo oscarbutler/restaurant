@@ -104,6 +104,7 @@ it will show you if you are logged in and an option to logout, all the user need
 ### Solved Bugs
 
 - There was a bug that I encountered which occured when I submitted the booking form. This showed an integrity
-error, in order to fix this I made the form require a login.
+error since there needed an userid, in order to fix this I made the form require a login which needed an username.
+I made it so the username was in place for the userid, this then allowed me to fix the problem I was encountering.
 
 ## Deployment
