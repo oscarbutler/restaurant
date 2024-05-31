@@ -64,6 +64,14 @@ to go to each page and find information that they are looking for.
 
 ### Desktop Device
 
+![Menu Starters](assets/documentation/oak-menu-starters.png)
+
+![Menu Mains](assets/documentation/oak-menu-mains.png)
+
+![Menu Desserts](assets/documentation/oak-menu-desserts.png)
+
+![Menu Drinks](assets/documentation/oak-menu-drinks.png)
+
 ### Tablet Device
 
 ### Mobile Device
