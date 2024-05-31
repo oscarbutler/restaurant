@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.views import View
 from django.http import HttpResponse
 from django.contrib import admin
@@ -49,35 +49,18 @@ def MakeBooking(request):
         form = reservationForm()
     return render(request, 'make_booking.html', {'form': form})
 
-# class MakeBooking(View):
-#     def get(self, request, *args):
-#         form = reservationForm()
-#         print("USERNAME IN SESSION", request.user.username)
-#         return render(request, 'make_booking.html', {'form': form})
-#     def post(self, request, *args):
-#         form = reservationForm(request.POST)
-#         print(form)
-#         if form.is_valid():
-#             print("FORM IS VALID")
-#             user_in_session = request.user
-#             # user_id = request.user.id
-#             print(user_in_session)
-#             user = user_in_session.save()
-#             form.save()
-#             return redirect('booking_success')
-#         else:
-#             print("FORM IS NOT VALID")
-#             form = reservationForm()
-#             return render(request, 'make_booking.html', {'form': form})
-
 def register(response):
     if response.method == "POST":
         form = RegisterForm(response.POST)
         if form.is_valid():
             form.save()
         
-        return redirect("")
+        return redirect("index.html")
     else:
         form = RegisterForm()
 
-        return render(response, "registration/register.html", {"form":form})
+        return render(response, "register.html", {"form":form})
+
+def login(request):
+    return render(request, 'login.html')
+
