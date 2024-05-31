@@ -19,6 +19,8 @@ class reservationForm(forms.ModelForm):
 
     def TableLimit(self):
         tables = super().clean()
+        date = tables.get('date')
+        time = tables.get('time')
 
 class RegisterForm(UserCreationForm):
     email = models.EmailField()
