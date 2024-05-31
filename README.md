@@ -97,7 +97,7 @@ it will show you if you are logged in and an option to logout, all the user need
 
 ## Testing
 
-
+- Please visit [Testing.md](Testing.md).
 
 ## Bugs
 
