@@ -22,6 +22,9 @@ class reservationForm(forms.ModelForm):
         date = tables.get('date')
         time = tables.get('time')
 
+        if date and time:
+            AmountOfBookings = BookingSystem.objects.filter(date=date, time=time).count()
+
 class RegisterForm(UserCreationForm):
     email = models.EmailField()
     
