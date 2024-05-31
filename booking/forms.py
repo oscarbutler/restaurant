@@ -24,7 +24,10 @@ class reservationForm(forms.ModelForm):
 
         if date and time:
             AmountOfBookings = BookingSystem.objects.filter(date=date, time=time).count()
-
+            if AmountOfBookings >= 3:
+                raise forms.ValidationError("There are no available tables for this time slot. Please choose a different time.")
+        
+        return tables
 class RegisterForm(UserCreationForm):
     email = models.EmailField()
     
