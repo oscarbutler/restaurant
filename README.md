@@ -62,6 +62,27 @@ to go to each page and find information that they are looking for.
 
 ## Features
 
+- A booking system is one of the main features. This allows the user to easily make a reservation at this restaurant
+from an options of days and times. This form makes sure that there are tables available at the specific
+time that the user has asked for. Once succesfully booked a reservation this information will be placed in an admin page
+which can be seen by users with access.
+
+- The admin page is a part of the project which specific people can access. They can see all the bookings that have been
+made and the time and date they have booked a table for. There are filters which I have placed through the admin.py page,
+this can make the user of the admin page's task much easier since they can look through data will ease.
+
+- In the website there is a way to register an account with the website. This will allow them to log in to the account which
+is crucial in order to make bookings. The form for this will make sure that the password that the user has is secure enough
+so that their account is safe.
+
+- Along with a register system there also need a log in system which will allow the user to log in to the website with just
+their username and password which makes it very simple. This will allow them to log in and make a booking, since it has been
+made to only show the booking page for when people are logged in. This is to ensure that we know who is making each
+reservation.
+
+- Since there is a login and register there also needs to be a logout system which is very simple for the user. On each page
+it will show you if you are logged in and an option to logout, all the user needs to do it press the link that is available.
+
 ## Technology Used
 
 - Python was used to make the code.
