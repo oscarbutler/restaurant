@@ -85,13 +85,6 @@
         </div>
     </header>
     <main>
-        <div class="login-or-out">
-            {% if user.is_authenticated %}
-            <p>Logged in as "{{ user.username }}"<a href="{% url 'logout' %}" class="logoutlink"> Logout</a></p>       
-            {% else %}
-            <p>Please <a href="{% url 'login' %}" class="logoutlink">Login</a> here</p>
-            {% endif %}
-        </div>
         {% if user.is_authenticated %}
             <h2 class="booking-heading">Booking</h2>
             <ul class="booking-options">
@@ -102,15 +95,18 @@
                 </a>
                 <li class="bookings-choice">View Bookings</li>
             </ul>
-            <p class="login-link"><a href="login" class="login-register">Sign in</a> If you do not have a account create one <a href="register" class="login-register">here.</a>
+            <p class="login-link"><a href="login.html" class="login-register">Sign in</a> If you do not have a account create one <a href="register.html" class="login-register">here.</a>
             </p>
         {% else %}
-        <p>Please log in</p>
+        <div class="need-login">
+            <p>In order to make a booking you need to be signed into an account.</p>
+            <p class="login-link-need"><a href="login.html" class="login-register">Sign in</a> If you do not have a account create one <a href="register.html" class="login-register">here.</a>
+        </div>
         {% endif %}
     </main>
 
     <footer>
-        <ul id="links">
+        <ul id="links-one">
             <li>
                 <!--Link to X/Twitter-->
                 <a href="https://www.x.com" target="_blank" rel="noopener" aria-label="Follow us on X!"><i
