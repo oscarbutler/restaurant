@@ -18,6 +18,7 @@ class reservationForm(forms.ModelForm):
         }
 
     def TableLimit(self):
+        tables = super().clean()
 
 class RegisterForm(UserCreationForm):
     email = models.EmailField()
