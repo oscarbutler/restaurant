@@ -109,6 +109,27 @@ to go to each page and find information that they are looking for.
 ![](assets/documentation/oak-booking-tablet.png)
 
 ### Mobile Device
+![](assets/documentation/oak-home-mobile.png)
+
+![](assets/documentation/oak-info-mobile.png)
+
+![](assets/documentation/oak-menu-starters-mobile.png)
+
+![](assets/documentation/oak-menu-mains-mobile.png)
+
+![](assets/documentation/oak-menu-desserts-mobile.png)
+
+![](assets/documentation/oak-menu-drinks-mobile.png)
+
+![](assets/documentation/oak-make-booking-mobile.png)
+
+![](assets/documentation/oak-view-booking-mobile.png)
+
+![](assets/documentation/oak-login-mobile.png)
+
+![](assets/documentation/oak-register-mobile.png)
+
+![](assets/documentation/oak-booking-mobile.png)
 
 ## Features
 
