@@ -79,13 +79,34 @@ to go to each page and find information that they are looking for.
 
 ![](assets/documentation/oak-view-booking-desktop.png)
 
-![](assets/documentation/oak-login-mobile.png)
+![](assets/documentation/oak-login-desktop.png)
 
-![](assets/documentation/oak-register-mobile.png)
+![](assets/documentation/oak-register-desktop.png)
 
 ![](assets/documentation/oak-booking-desktop.png)
 
 ### Tablet Device
+![](assets/documentation/oak-home-tablet.png)
+
+![](assets/documentation/oak-info-tablet.png)
+
+![](assets/documentation/oak-menu-starters-tablet.png)
+
+![](assets/documentation/oak-menu-mains-tablet.png)
+
+![](assets/documentation/oak-menu-desserts-tablet.png)
+
+![](assets/documentation/oak-menu-drinks-tablet.png)
+
+![](assets/documentation/oak-make-booking-tablet.png)
+
+![](assets/documentation/oak-view-booking-tablet.png)
+
+![](assets/documentation/oak-login-tablet.png)
+
+![](assets/documentation/oak-register-tablet.png)
+
+![](assets/documentation/oak-booking-tablet.png)
 
 ### Mobile Device
 
