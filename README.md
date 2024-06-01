@@ -63,6 +63,9 @@ to go to each page and find information that they are looking for.
 ## Wireframes
 
 ### Desktop Device
+![](assets/documentation/oak-home.png)
+
+![](assets/documentation/oak-info-desktop.png)
 
 ![Menu Starters](assets/documentation/oak-menu-starters.png)
 
