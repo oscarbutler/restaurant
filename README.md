@@ -47,12 +47,17 @@ Happy coding!
 - For a first time user should be able to navigate through the website with ease. This means that they should be able
 to go to each page and find information that they are looking for.
 
+- The sign in and register process should be smooth and easy to detect if an error occurs in the registering process.
+
+- The user should know if they are signed in to the website.
 
 ### Returning User
 
 - A returning user should be pleased with the way the website is arranged and the booking system should be efficient.
 
 ### Frequent User
+
+- A frequent user should find it easy to login to a previous account that has been registered to this website.
 
 ## Purpose
 
