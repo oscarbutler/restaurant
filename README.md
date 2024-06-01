@@ -75,6 +75,16 @@ to go to each page and find information that they are looking for.
 
 ![Menu Drinks](assets/documentation/oak-menu-drinks.png)
 
+![](assets/documentation/oak-make-booking-desktop.png)
+
+![](assets/documentation/oak-view-booking-desktop.png)
+
+![](assets/documentation/oak-login-mobile.png)
+
+![](assets/documentation/oak-register-mobile.png)
+
+![](assets/documentation/oak-booking-desktop.png)
+
 ### Tablet Device
 
 ### Mobile Device
