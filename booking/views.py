@@ -65,4 +65,4 @@ def login(request):
     return render(request, 'login.html')
 
 def view_bookings(request):
-
+    bookings = BookingSystem.objects.filter(user=request.user)
