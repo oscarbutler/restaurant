@@ -295,3 +295,18 @@ a.logoutlink{
         width: 100%;
     }
 }
+
+a.login-to-register {
+    color: black;
+    text-decoration: underline;
+}
+
+.need-login{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30vh;
+    background-color: rgba(225,179,130,1);
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+}
