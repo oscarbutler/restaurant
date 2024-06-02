@@ -64,6 +64,7 @@ def register(response):
 def login(request):
     return render(request, 'login.html')
 
+@login_required
 def view_bookings(request):
     bookings = BookingSystem.objects.filter(user=request.user)
 
@@ -71,3 +72,6 @@ def view_bookings(request):
         booking_id = request.POST.get('booking_id')
         booking = get_object_or_404(BookingSystem, pk=booking_id)
         booking.delete()
+        return redirect('view_bookings.html')
+
+    return render(request, 'view_bookings.html', {'bookings': bookings})
