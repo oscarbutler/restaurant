@@ -183,4 +183,10 @@ it will show you if you are logged in and an option to logout, all the user need
 error since there needed an userid, in order to fix this I made the form require a login which needed an username.
 I made it so the username was in place for the userid, this then allowed me to fix the problem I was encountering.
 
+### Unsolved Bugs
+
+### Mistakes
+
 ## Deployment
+
+- This project is deployed in heroku.
