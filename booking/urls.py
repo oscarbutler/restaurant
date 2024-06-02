@@ -2,6 +2,8 @@ from django.urls import path
 from . import views
 from .views import MakeBooking
 from .views import register
+from django.contrib.auth import views as auth_views
+
 urlpatterns = [
     path('', views.home, name='home'),
     path('menu.html', views.menu, name='menu'),
@@ -13,7 +15,7 @@ urlpatterns = [
     path('index.html', views.home, name='home'),
     path('booking.html', views.booking, name='booking'),
     path('make_booking.html', views.MakeBooking, name='make-booking'),
-    path('register/', views.register, name="register"),
+    path('register.html', views.register, name="register"),
     path('register/menu-drinks.html', views.menu_drinks, name='menu-drinks'),
     path('register/menu-main.html', views.menu_main, name='menu-main'),
     path('register/menu-starters.html', views.menu_starters, name='menu-starters'),
@@ -31,4 +33,7 @@ urlpatterns = [
     path('login/index.html', views.home, name='home'),
     path('login/booking.html', views.booking, name='booking'),
     path('login/make_booking.html', views.MakeBooking, name='make-booking'),
+    path('login/register.html', views.register, name='make-booking'),
+    path('login.html', views.login, name='make-booking'),
+    path('login/info.html', views.info,)
 ]
