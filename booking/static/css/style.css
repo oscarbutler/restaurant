@@ -196,6 +196,13 @@ footer{
     margin-top: 20px;
 }
 
+.booking-heading{
+    font-family: 'Dancing Script', Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 110px;
+}
+
 .about-text{
     text-align: center;
     font-size:large;
