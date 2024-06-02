@@ -90,6 +90,7 @@
                 <li>
                     {{ booking.customer_name }} - {{ booking.date }} at {{ booking.time }}
                     <form method="post" class="view-bookings-form">
+                        {% csrf_token %}
                     </form>
                 </li>
             {% empty %}
