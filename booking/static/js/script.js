@@ -9,3 +9,7 @@ function changeSlideshowImage() {
     SlideshowIndex = (SlideshowIndex + 1) % SlideshowImagesList.length;
     img.src = SlideshowImagesList[SlideshowIndex];
 }
+
+document.getElementById('nextImage').addEventListener('click', changeImage);
+
+changeSlideshowImage()
