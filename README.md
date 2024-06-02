@@ -187,6 +187,12 @@ I made it so the username was in place for the userid, this then allowed me to f
 
 ### Mistakes
 
+- In git commit ff582d0 I made a slight mistake in the text I used to describe the changes. It is "CMake a meta 
+class for register form" this shows the mistake I made as I didnt mean to add a C at the start of the world "Make".
+
+- Also in the git commit "984f726" I also accidentally make a mistake in the text I made to describe the git commit.
+"Add fiCreate booking function", the mistake it that there is "fi on the start of the word "create".
+
 ## Deployment
 
 - This project is deployed in heroku.
