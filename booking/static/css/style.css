@@ -212,6 +212,14 @@ footer{
     margin-right: auto;
 }
 
+button#nextImage{
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    margin-top: 10px;
+    background-color: rgba(225, 179, 130, 1);
+}
+
 .about-text{
     text-align: center;
     font-size:large;
