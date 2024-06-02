@@ -87,7 +87,9 @@
     <main>
         <h2 class="view-bookings-title">View Bookings</h1>
             {% for booking in bookings %}
-            
+                <li>
+                    {{ booking.customer_name }} - {{ booking.date }} at {{ booking.time }}
+                </li>
             {% empty %}
 
             {% endfor %}
