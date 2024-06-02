@@ -1,0 +1,332 @@
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+/*Header*/
+
+.menu-home {
+    padding: 10px;
+    text-align: center;
+}
+
+.menu-info {
+    padding: 10px;
+    text-align: center;
+}
+
+.menu-menu {
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.menu-booking {
+    padding: 10px;
+    text-align: center;
+}
+
+#menu {
+    font-weight: 600;
+    width: fit-content;
+    position: absolute;
+    top: -70px;
+    right: 1vh;
+    flex-wrap: wrap;
+    list-style: none;
+    font-family: 'Dancing Script';
+    font-size: x-large;
+}
+
+header {
+    box-shadow: 0px 5px 5px #000000;
+    background-color: rgba(225,179,130,1);
+}
+
+h1 {
+    color: white;
+    font-family: 'Dancing Script', 'Times New Roman', Times, serif;
+    font-size: 60px;
+}
+
+a {
+    color: rgb(255, 255, 255);
+} 
+
+.makebookings{
+    color: #000000;
+}
+
+
+/*Info Page*/
+
+.restaurant-text{
+    color: black;
+    padding: 10px;
+    font-size: large;
+}
+
+.contacts{
+    margin-left:80%;
+    margin-bottom: -150px;
+}
+
+/*Footer*/
+
+footer{
+    width: 100%;
+}
+
+#links {
+    text-align: center;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(225,179,130,1);
+}
+
+#links i {
+    font-size: 150%;
+    padding: 10%;
+    color: rgb(255, 255, 255);
+}
+
+.booking-message{
+    background-color: rgba(225,179,130,1);
+    width: fit-content;
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-top: 170px;
+    padding: 20px;
+}
+
+.response-message {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    color: #000000;
+    background-color: rgba(225,179,130,1);
+    width: fit-content;
+    padding: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 200px;
+    margin-bottom: 110px;
+    text-decoration: underline;
+    border-radius: 12px;
+}
+
+.ul-options {
+    list-style: none;
+    background-color: rgba(225, 179, 130, 1);
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    padding: 25px;
+    border: 1px black;
+}
+
+.menu-menu:hover .menu-list {
+    display: block;
+
+}
+.menu-list{
+    display: none;
+}
+
+.main-courses, .starter-menu, .desserts-menu, .drinks-menu{
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: underline;
+    font-weight: 600;
+    font-family: 'Dancing Script';
+}
+
+.meal-name{
+    font-weight: 900;
+}
+
+.drinks-heading{
+    font-weight: 300;
+    text-align: center;
+    font-size: 20px
+}
+
+.submit-button{
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgba(225, 179, 130, 1);
+    align-content: center;
+    text-decoration: underline;
+    padding: 8px;
+    margin-top: 50px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.open-times, .contact-info{
+    font-family: 'Dancing Script', Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+}
+
+.opening-times-text{
+    font-family: 'Dancing Script', Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+ .contact-info-text{
+    font-family: 'Dancing Script', Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.welcome-heading, .about{
+    font-family: 'Dancing Script', Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.booking-heading{
+    font-family: 'Dancing Script', Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 110px;
+}
+.dining{
+    width: 50%;
+    height: 400px;
+    position: relative;
+    background: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button#nextImage{
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    margin-top: 10px;
+    background-color: rgba(225, 179, 130, 1);
+}
+
+.about-text{
+    text-align: center;
+    font-size:large;
+}
+
+.menu-heading {
+    color: white;
+}
+
+.booking-options {
+    text-align: center;
+    padding: 10px;
+    font-family: 'Dancing Script';
+    font-size: xx-large;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.title {
+    font-size: 30px;
+    color: #000000;
+    text-align: center;
+    padding: 5px;
+}
+
+input{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid black;
+}
+
+.login-register, .login-link {
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+    position: relative;
+    font-family: 'Dancing Script';
+    font-weight: 200;
+}
+
+.login-register{
+    text-decoration: underline;
+}
+
+.login-or-out{
+    background-color: rgba(176,196,222, 0.7);
+    color: black;
+    font-size: large;
+    width: fit-content;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 7px;
+}
+
+a.logoutlink{
+    color: black;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+
+    #menu {
+        position: static;
+        width: 100%;
+    }
+}
+
+a.login-to-register {
+    color: black;
+    text-decoration: underline;
+}
+
+.need-login{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30vh;
+    background-color: rgba(225,179,130,1);
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+ul#links-one{
+    margin-top: 35vh;
+    text-align: center;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(225, 179, 130, 1);
+}
+
+#links-one i {
+    font-size: 150%;
+    padding: 10%;
+    color: rgb(255, 255, 255);
+}
+
