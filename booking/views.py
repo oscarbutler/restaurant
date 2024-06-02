@@ -69,3 +69,5 @@ def view_bookings(request):
 
     if request.method == 'POST' and 'delete' in request.POST:
         booking_id = request.POST.get('booking_id')
+        booking = get_object_or_404(BookingSystem, pk=booking_id)
+        booking.delete()
