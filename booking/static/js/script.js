@@ -6,4 +6,5 @@ let SlideshowIndex = 0;
 
 function changeSlideshowImage() {
     const img = document.getElementById('slideshowImage');
+    SlideshowIndex = (SlideshowIndex + 1) % SlideshowImagesList.length;
 }
