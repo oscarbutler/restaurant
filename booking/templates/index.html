@@ -89,7 +89,8 @@
     </header>
     <main>
         <h2 class="welcome-heading">Welcome To The Oak</h2>
-        <img src="{% static 'images/dining-image.jpg' %}" class="dining">
+        <img id="slideshowImage" src="{% static 'images/dining-image.jpg' %}" class="dining">
+        <button id="nextImage">Next</button>
         <h3 class="about">About</h3>
         <p class="about-text">This is a state of the art restaurant which serves a wide variety
             of dishes that come from a plethora of cultures.
@@ -123,6 +124,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/17b1279bab.js" crossorigin="anonymous"></script>
+    <script src="{% static 'js/script.js' %}"></script>
 </body>
 
 </html>
