@@ -66,3 +66,6 @@ def login(request):
 
 def view_bookings(request):
     bookings = BookingSystem.objects.filter(user=request.user)
+
+    if request.method == 'POST' and 'delete' in request.POST:
+        booking_id = request.POST.get('booking_id')
