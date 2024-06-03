@@ -330,3 +330,25 @@ ul#links-one{
     color: rgb(255, 255, 255);
 }
 
+.view-bookings-form{
+    display: inline;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.view-bookings-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    font-family: 'Dancing Script';
+    align-items: center;
+}
