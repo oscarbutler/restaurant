@@ -195,6 +195,12 @@ it will show you if you are logged in and an option to logout, all the user need
 
 - Please visit [TESTING.md](TESTING.md).
 
+## Credits
+
+I learnt how to create the login and logout through this [video]('https://www.youtube.com/watch?v=z4lfVsb_7MA&t=375s')
+
+I also learnt how to create the register form through this [video](https://www.youtube.com/watch?v=Ev5xgwndmfc&t=975s)
+
 ## Bugs
 
 ### Solved Bugs
