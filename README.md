@@ -39,6 +39,27 @@ AC2: The site user should be able to choose a specific date and time for their r
 AC1: There should be a maximum people that are allowed in a group when making a reservation in order to not over populate the restaurant.
 
 AC2: The system should change automatically when a reservation is made for the date and time to reduce chance of having to refuse people due to to many people being there.
+#### Details of Reservation
+
+The site user should be able to give the person who is making a reservation details about the restaurant so that they can choose based on their preferences.
+
+AC1: The website should show available dates and times that the user can choose from.
+AC2: The user should see be asked how many people would they want to take with them to the restaurant.
+
+#### Device Compatibility
+
+As a site user I should be able to user the website on a variety of devices.
+
+AC1: The appearance of the website should change depending on the device I use.
+
+AC2: Every part of the website should be compatible including forms, images, header and footer.
+
+#### View Menu
+
+Users should be able to view what the restaurant contains before making a booking.
+The site should show a variety of foods and drinks in an presentable way.
+
+AC1: Show a list of clear display of what the food or drink is.
 
 ## Wireframes
 
