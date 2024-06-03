@@ -23,6 +23,23 @@ to go to each page and find information that they are looking for.
 
 - The purpose of this is to create a website for a restaurant that includes a way to book a reservation. 
 
+#### Customer Reservation
+
+- As a site user you need to be able to make a reservation at the restaurant at a specific date and time so that they can plan their day around it.
+
+Acceptance Criteria:
+AC1: A site user should be able to book a reservation at the restaurant successfully in advance.
+
+AC2: The site user should be able to choose a specific date and time for their reservation.
+
+#### Booking Availability
+
+- When working at a restaurant you should be able to manage the tables in order to make it as efficient as possible.
+
+AC1: There should be a maximum people that are allowed in a group when making a reservation in order to not over populate the restaurant.
+
+AC2: The system should change automatically when a reservation is made for the date and time to reduce chance of having to refuse people due to to many people being there.
+
 ## Wireframes
 
 ### Desktop Device
