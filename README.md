@@ -23,8 +23,6 @@ to go to each page and find information that they are looking for.
 
 - The purpose of this is to create a website for a restaurant that includes a way to book a reservation. 
 
-## Flowchart
-
 ## Wireframes
 
 ### Desktop Device
@@ -102,6 +100,7 @@ to go to each page and find information that they are looking for.
 from an options of days and times. This form makes sure that there are tables available at the specific
 time that the user has asked for. Once succesfully booked a reservation this information will be placed in an admin page
 which can be seen by users with access.
+![](assets/documentation/oak-reservation-form.png)
 
 - The admin page is a part of the project which specific people can access. They can see all the bookings that have been
 made and the time and date they have booked a table for. There are filters which I have placed through the admin.py page,
@@ -115,7 +114,8 @@ so that their account is safe.
 their username and password which makes it very simple. This will allow them to log in and make a booking, since it has been
 made to only show the booking page for when people are logged in. This is to ensure that we know who is making each
 reservation.
-
+![](assets/documentation/oak-login.png
+)
 - Since there is a login and register there also needs to be a logout system which is very simple for the user. On each page
 it will show you if you are logged in and an option to logout, all the user needs to do it press the link that is available.
 
