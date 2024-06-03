@@ -201,6 +201,9 @@ I learnt how to create the login and logout through this [video]('https://www.yo
 
 I also learnt how to create the register form through this [video](https://www.youtube.com/watch?v=Ev5xgwndmfc&t=975s)
 
+The link to the food image I have used is from this [website](https://eu.usatoday.com/story/money/personalfinance/2017/10/13/12-tips-saving-money-fancy-restaurants/750778001/)
+
+The dining image I have found is from this website [](https://www.pexels.com/photo/wine-glasses-on-table-tops-941861/)
 ## Bugs
 
 ### Solved Bugs
