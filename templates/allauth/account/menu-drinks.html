@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% block title %}
+Drinks
+{% endblock %}
+
+{% block content %}
+{% load static %}
+<main>
+    <div class="login-or-out">
+        {% if user.is_authenticated %}
+        <p>Logged in as "{{ user.username }}"<a href="{% url 'logout' %}" class="logoutlink"> Logout</a></p>
+        {% else %}
+        <p>Please <a href="{% url 'login' %}" class="logoutlink">Login</a> here</p>
+        {% endif %}
+    </div>
+    <h2 class="drinks-menu">Drinks Menu</h2>
+
+
+    <h3 class="drinks-heading">Soft Drinks</h3>
+    Water<br>
+    Pepsi Max<br>
+    Lemonade<br>
+    Sparkling Water<br>
+    Tonic Water<br>
+    Iced Tea
+
+    <h3 class="drinks-heading">Beers & Ciders:</h3>
+    <div class="meal-name">On draft:</div>
+    Staropramen<br>
+    Corona<br>
+    Guiness<br>
+    Stella<br>
+    Dark Fruits<br>
+    <div class="meal-name">In bottles:</div>
+    Carling<br>
+    Coors<br>
+    Desperados<br>
+    <h3 class="drinks-heading">Wines:</h3>
+    <div class="meal-name">Pinot Noir:</div>
+    Light to medium-bodied red wine with red fruit flavors such as cherry and strawberry. A great match for
+    roasted poultry, salmon, and earthy dishes.<br>
+
+    <div class="meal-name">Merlot:</div>
+    Soft and approachable with velvety tannins, showcasing plum, black cherry, and vanilla notes. Pairs well
+    with lamb, pasta, and grilled meats.<br>
+
+    <div class="meal-name">Provence Rosé:</div>
+    Light, dry, and elegant with flavors of strawberry, watermelon, and floral notes. A delightful choice for
+    salads, seafood, and light appetizers.<br>
+</main>
+{% endblock %}

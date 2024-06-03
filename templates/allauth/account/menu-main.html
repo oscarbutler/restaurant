@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% block title %}
+Mains
+{% endblock %}
+
+{% block content %}
+{% load static %}
+<main>
+    <div class="login-or-out">
+        {% if user.is_authenticated %}
+        <p>Logged in as "{{ user.username }}"<a href="{% url 'logout' %}" class="logoutlink"> Logout</a></p>
+        {% else %}
+        <p>Please <a href="{% url 'login' %}" class="logoutlink">Login</a> here</p>
+        {% endif %}
+    </div>
+    <h2 class="main-courses">Main Courses</h2>
+    <p class="meals-main"><br>
+    <div class="meal-name">Herb-Crusted Rack of Lamb:</div>
+    Tender rack of lamb coated in a flavorful herb crust, roasted to perfection. Served with a red wine
+    reduction, garlic mashed potatoes, and roasted Brussels sprouts.
+    <br>
+    <br>
+    <div class="meal-name">Pan-Seared Duck Breast with Cherry Port Sauce:</div>
+    Pan-seared duck breast with a luscious cherry port wine sauce. Accompanied by wild rice pilaf and sautéed
+    haricot verts.
+    <br>
+    <br>
+    <div class="meal-name">Seared Sea Bass with Lemon Beurre Blanc:</div>
+    Delicate sea bass fillet pan-seared to a golden brown and served with a velvety lemon beurre blanc sauce.
+    Paired with asparagus tips and truffle-infused mashed potatoes.
+    <br>
+    <br>
+    <div class="meal-name">Veal Marsala with Wild Mushroom Risotto:</div>
+    Tender veal cutlets in a Marsala wine sauce, served over a bed of wild mushroom risotto. Garnished with
+    fresh parsley.
+    <br>
+    <br>
+    <div class="meal-name">Lobster Ravioli in Champagne Cream Sauce:</div>
+    Plump lobster-filled ravioli bathed in a luxurious champagne-infused cream sauce, topped with shaved
+    Parmesan and chives.
+    <br>
+    <br>
+    <div class="meal-name">Grilled Swordfish with Mango Salsa:</div>
+    Perfectly grilled swordfish steak topped with a vibrant mango salsa. Served with quinoa pilaf and sautéed
+    baby spinach.
+    <br>
+    <br>
+    <div class="meal-name">Pork Tenderloin with Apple Cider Glaze:</div>
+    Roasted pork tenderloin drizzled with a sweet apple cider glaze. Accompanied by sweet potato puree and green
+    bean almondine.
+    <br>
+    <br>
+    <div class="meal-name">Chicken Piccata with Capers:</div>
+    Pan-seared chicken breast in a zesty lemon and caper sauce. Served with garlic-infused mashed potatoes and
+    roasted broccolini.
+    <br>
+    <br>
+    <div class="meal-name">Grilled Portobello and Gouda Stuffed Chicken:</div>
+    Chicken breast stuffed with grilled portobello mushrooms and smoked Gouda, served with a sun-dried tomato
+    cream sauce. Accompanied by truffle macaroni and cheese.
+    </p>
+</main>
+{% endblock %}

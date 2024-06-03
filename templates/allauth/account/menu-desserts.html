@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% block title %}
+Desserts
+{% endblock %}
+{% block content %}
+{% load static %}
+<main>
+    <div class="login-or-out">
+        {% if user.is_authenticated %}
+        <p>Logged in as "{{ user.username }}"<a href="{% url 'logout' %}" class="logoutlink"> Logout</a></p>
+        {% else %}
+        <p>Please <a href="{% url 'login' %}" class="logoutlink">Login</a> here</p>
+        {% endif %}
+    </div>
+    <h2 class="desserts-menu">Desserts</h2>
+
+    <div class="meal-name">Chocolate Fondant:</div>
+    A decadent and gooey chocolate cake with a molten center. Served with a scoop of vanilla bean ice cream and a
+    drizzle of raspberry coulis.
+
+    <div class="meal-name">Crème Brûlée:</div>
+    A classic French dessert featuring vanilla custard with a perfectly caramelized sugar crust. Garnished with
+    fresh berries.
+
+    <div class="meal-name">Tiramisu:</div>
+    Layers of espresso-soaked ladyfingers and mascarpone cream, dusted with cocoa powder and served with a side of
+    chocolate sauce.
+
+    <div class="meal-name">Lemon Soufflé:</div>
+    A light and fluffy lemon-flavored soufflé served with a dollop of whipped cream and a sprinkle of powdered
+    sugar.
+
+    <div class="meal-name">Panna Cotta with Berry Compote:</div>
+    Smooth vanilla-infused panna cotta topped with a vibrant mixed berry compote and a mint garnish.
+
+    <div class="meal-name">White Chocolate Raspberry Cheesecake:</div>
+    Creamy white chocolate cheesecake with a raspberry swirl, served on a buttery graham cracker crust.
+
+    <div class="meal-name">Hazelnut Praline Mousse:</div>
+    Velvety hazelnut mousse layered with a crunchy praline base, topped with whipped cream and caramelized
+    hazelnuts.
+
+    <div class="meal-name">Poached Pear in Red Wine:</div>
+    Pears poached in red wine and spices, served with a drizzle of reduced poaching liquid and a scoop of vanilla
+    ice cream.
+
+    <div class="meal-name">Opera Cake:</div>
+    A layered almond sponge cake with coffee buttercream and chocolate ganache. Served with a raspberry coulis.
+
+    <div class="meal-name">Mango Sorbet with Prosecco:</div>
+    Refreshing mango sorbet served in a chilled glass, topped with a splash of Prosecco and a mint sprig.
+</main>
+{% endblock %}

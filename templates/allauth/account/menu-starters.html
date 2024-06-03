@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% block title %}
+Starters
+{% endblock %}
+
+{% block content %}
+{% load static %}
+<main>
+    <div class="login-or-out">
+        {% if user.is_authenticated %}
+        <p>Logged in as "{{ user.username }}"<a href="{% url 'logout' %}" class="logoutlink"> Logout</a></p>
+        {% else %}
+        <p>Please <a href="{% url 'login' %}" class="logoutlink">Login</a> here</p>
+        {% endif %}
+    </div>
+    <h2 class="starter-menu">Starters</h2>
+
+    <div class="meal-name">Truffle Mushroom Risotto Balls:</div>
+    Crispy arancini filled with truffle-infused mushroom risotto, served with a truffle aioli for dipping.
+
+    <div class="meal-name">Smoked Salmon and Cucumber Canapés:</div>
+    Delicate smoked salmon slices on crisp cucumber rounds, topped with herbed cream cheese and fresh dill.
+
+    <div class="meal-name">Goat Cheese and Fig Crostini:</div>
+    Toasted baguette slices topped with creamy goat cheese, fig compote, and a drizzle of honey. Garnished with
+    chopped pistachios.
+
+    <div class="meal-name">Seared Scallop with Citrus Beurre Blanc:</div>
+    Perfectly seared scallop served with a citrusy beurre blanc sauce, accompanied by microgreens and a balsamic
+    reduction.
+
+    <div class="meal-name">Lobster Bisque:</div>
+    Rich and velvety lobster soup with a touch of brandy, garnished with a dollop of crème fraîche and chives.
+
+    <div class="meal-name">Caprese Salad Stacks:</div>
+    Alternating layers of ripe heirloom tomatoes, fresh mozzarella, and basil leaves, drizzled with balsamic glaze
+    and olive oil.
+
+    <div class="meal-name">Duck Confit Spring Rolls:</div>
+    Crispy spring rolls filled with tender duck confit, shredded vegetables, and hoisin dipping sauce.
+
+    <div class="meal-name">Arugula and Prosciutto Flatbread:</div>
+    Thin-crust flatbread topped with peppery arugula, prosciutto, shaved Parmesan, and a balsamic reduction.
+
+    <div class="meal-name">Shrimp and Avocado Cocktail:</div>
+    Chilled shrimp served with diced avocado, cocktail sauce, and a wedge of lemon. Presented in an elegant martini
+    glass.
+
+    <div class="meal-name">Caramelized Onion and Gruyère Tartlets:</div>
+    Buttery tartlet shells filled with caramelized onions, Gruyère cheese, and a hint of thyme. Perfectly bite-sized
+    and flavorful.
+
+    <div class="meal-name">Tuna Tartare with Avocado Mousse:</div>
+    Freshly diced tuna mixed with sesame soy dressing, served atop avocado mousse with crispy wonton chips.
+
+    <div class="meal-name">Prosciutto-Wrapped Asparagus:</div>
+    Tender asparagus spears wrapped in prosciutto and roasted until crispy. Served with a balsamic glaze.
+</main>
+{% endblock %}

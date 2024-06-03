@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    View Bookings
+{% endblock %}
+
+{% block content %}
+<form method="post" class="form-group">
+    {% csrf_token %}
+    {{form}}
+    <button type="submit" class="btn btn-success">Login</button>
+    <p class="register-link">Don't have an account? Create one <a href="register.html" class="login-to-register">here</a></p>
+</form>
+{% endblock %}

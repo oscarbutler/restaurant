@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}
+Register
+{% endblock %}
+
+{% block content %}
+{% load static %}
+<main>
+    <form method="POST" class="form-group">
+        {% csrf_token %}
+        {{form}}
+        <button type="submit" class="btn btn-success">Register</button>
+    </form>
+</main>
+{% endblock %}
