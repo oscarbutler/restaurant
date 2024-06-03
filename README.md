@@ -181,12 +181,11 @@ it will show you if you are logged in and an option to logout, all the user need
 
 ## Technology Used
 
-- Python was used to make the code.
-- Django
-- HTML
-- CSS 
-- Javascript
-- Bootstrap
+- Python was used create 
+- HTML is used to make the main structure of the pages
+- CSS is used to decorate and style all the different pages.
+- Javascript is used to create interactive section in the website
+- Bootstrap was also used to create an interactive website.
 - ElephantSql was used in order to host the database and store the data we will recieve.
 - Gitpod was used to write the code.
 - Git Hub was where the repository and code is stored.
@@ -203,7 +202,8 @@ I also learnt how to create the register form through this [video](https://www.y
 
 The link to the food image I have used is from this [website](https://eu.usatoday.com/story/money/personalfinance/2017/10/13/12-tips-saving-money-fancy-restaurants/750778001/)
 
-The dining image I have found is from this website [](https://www.pexels.com/photo/wine-glasses-on-table-tops-941861/)
+The dining image I have found is from this [website](https://www.pexels.com/photo/wine-glasses-on-table-tops-941861/)
+
 ## Bugs
 
 ### Solved Bugs
