@@ -61,6 +61,28 @@ The site should show a variety of foods and drinks in an presentable way.
 
 AC1: Show a list of clear display of what the food or drink is.
 
+#### Delete Reservation
+
+AC1: An user needs to be able to delete reservations in order for them to be able to change their mind in the future and a easy way to cancel.
+
+AC2: This should also remove the booking in the admin page.
+
+#### Login
+
+AC1: The user should be able to log in to their account that they have previously registered
+
+#### Login Message
+
+AC1: There should be a log in message to let the user know if they are logged in to their account.
+
+AC2: It should be a clear message for the user to see.
+
+#### Logout
+
+AC1: There needs to be a easy way to logout of their account.
+
+AC2: Once logged out the user should know and be able to find a way to log back in.
+
 ## Wireframes
 
 ### Desktop Device
