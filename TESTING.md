@@ -2,27 +2,6 @@
 
 # Testing
 
-## Validation
+## Manual Testing
 
-### Home Page
-
-### Information Page
-
-### Starters Menu
-
-### Main Menus
-
-### Dessert Menu
-
-### Drinks Menu
-
-### Login
-
-### Register
-
-### Booking
-
-### Make Booking
-
-### View Booking
-
+| Feature | Action | Expected Result | Tested | Passed | Comments |
