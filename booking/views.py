@@ -44,7 +44,7 @@ def MakeBooking(request):
             booking = form.save(commit=False)
             booking.user_id = request.user.id 
             booking.save()
-            return render(request, 'allauth/account/index.html')
+            return render(request, 'index.html')
     else:
         form = reservationForm()
     return render(request, 'allauth/account/make_booking.html', {'form': form})
@@ -72,9 +72,9 @@ def view_bookings(request):
         booking_id = request.POST.get('booking_id')
         booking = get_object_or_404(BookingSystem, pk=booking_id)
         booking.delete()
-        return redirect('view-bookings')
+        return redirect('view_bookings.html')
 
-    return render(request, 'view_bookings.html', {'bookings': bookings})
+    return render(request, 'allauth/account/view_bookings.html', {'bookings': bookings})
 
 def menu_desserts(request):
     return render(request, 'allauth/account/menu-desserts.html')

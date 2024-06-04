@@ -16,7 +16,7 @@ urlpatterns = [
     path('booking.html', views.booking, name='booking'),
     path('make_booking.html', views.MakeBooking, name='make-booking'),
     path('register.html', views.register, name="register"),
-    path('view_bookings.html', views.view_bookings, name='view-bookings'),
+    path('view_bookings.html', views.view_bookings, name='view_bookings'),
     path('login/booking.html', views.booking, name="booking"),
     path('login/menu-drinks.html', views.menu_drinks, name='menu-drinks'),
     path('login/menu-main.html', views.menu_main, name='menu-main'),
@@ -28,4 +28,4 @@ urlpatterns = [
     path('login/register.html', views.register, name='make-booking'),
     path('login.html', views.login, name='make-booking'),
     path('login/info.html', views.info,),
-    path('login/view-bookings.html', views.view_bookings, name='view-bookings'),]
+    ]
