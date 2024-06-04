@@ -20,6 +20,7 @@ if os.path.isfile('env.py'):
 BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
@@ -29,9 +30,8 @@ SECRET_KEY = 'django-insecure-u_yff%tq+!9f^1dzfs4mc802_sc@#$-ry!^wu4i*k2q^ogsx9b
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['8000-oscarbutler-restaurant-m3d50u4ixqt.ws-eu110.gitpod.io',
-                '.herokuapp.com', '8000-oscarbutler-restaurant-m3d50u4ixqt.ws-eu112.gitpod.io', '8000-oscarbutler-restaurant-m3d50u4ixqt.ws-eu111.gitpod.io'
-                ,'8000-oscarbutler-restaurant-m3d50u4ixqt.ws-eu114.gitpod.io']
+ALLOWED_HOSTS = ['8000-oscarbutler-restaurant-m3d50u4ixqt.ws-eu114.gitpod.io',
+                '.herokuapp.com']
 
 
 # Application definition
@@ -62,16 +62,11 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'restaurant.urls'
-BASE_DIR = Path(__file__).resolve().parent.parent
-# TEMPLATES_DIR = BASE_DIR / "templates"
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [
-          os.path.join(BASE_DIR, 'templates'),
-          os.path.join(BASE_DIR, 'templates', 'allauth'),
-        ],
+        'DIRS': [TEMPLATES_DIR],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -85,6 +80,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'restaurant.wsgi.application'
+
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
@@ -103,9 +99,7 @@ DATABASES = {
 CSRF_TRUSTED_ORIGINS = [
     "https://*.codeanyapp.com",
     "https://*.herokuapp.com",
-    "https://8000-oscarbutler-restaurant-m3d50u4ixqt.ws-eu110.gitpod.io",
-    'https://8000-oscarbutler-restaurant-m3d50u4ixqt.ws-eu111.gitpod.io',
-    'https://8000-oscarbutler-restaurant-m3d50u4ixqt.ws-eu114.gitpod.io',
+    "https://8000-oscarbutler-restaurant-m3d50u4ixqt.ws-eu110.gitpod.io"
 ]
 
 SECRET_KEY = os.environ.get("SECRET_KEY")
@@ -144,7 +138,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = 'static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
@@ -159,14 +153,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
-
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
-# STORAGES = {
-#     "staticfiles": {
-#         "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
-#     },
-# }
 
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_EMAIL_VERIFICATION = "mandatory"
