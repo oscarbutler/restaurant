@@ -71,6 +71,8 @@ AC2: This should also remove the booking in the admin page.
 
 AC1: The user should be able to log in to their account that they have previously registered
 
+AC2: The should be able to log in whenever they are on the website.
+
 #### Login Message
 
 AC1: There should be a log in message to let the user know if they are logged in to their account.
@@ -82,6 +84,11 @@ AC2: It should be a clear message for the user to see.
 AC1: There needs to be a easy way to logout of their account.
 
 AC2: Once logged out the user should know and be able to find a way to log back in.
+
+## Design
+
+- I have chosen the design because it is simple but also very useful. This is because the user can see what the website contains
+while being able to navigate with ease.
 
 ## Wireframes
 
@@ -169,13 +176,13 @@ this can make the user of the admin page's task much easier since they can look 
 - In the website there is a way to register an account with the website. This will allow them to log in to the account which
 is crucial in order to make bookings. The form for this will make sure that the password that the user has is secure enough
 so that their account is safe.
-
+![](assets/documentation/oak-res-form.png)
 - Along with a register system there also need a log in system which will allow the user to log in to the website with just
 their username and password which makes it very simple. This will allow them to log in and make a booking, since it has been
 made to only show the booking page for when people are logged in. This is to ensure that we know who is making each
 reservation.
-![](assets/documentation/oak-login.png
-)
+![](assets/documentation/oak-login.png)
+
 - Since there is a login and register there also needs to be a logout system which is very simple for the user. On each page
 it will show you if you are logged in and an option to logout, all the user needs to do it press the link that is available.
 
@@ -215,6 +222,9 @@ The fourth image is from this [website](https://www.oliversmarket.com/make-me-a-
 - There was a bug that I encountered which occured when I submitted the booking form. This showed an integrity
 error since there needed an userid, in order to fix this I made the form require a login which needed an username.
 I made it so the username was in place for the userid, this then allowed me to fix the problem I was encountering.
+
+- A bug that occured was that I had a server error and a bad request error which stemmed from an incorrectly made
+whitenoise storage. These errors on happened wheb debug was false, this made it challening to find a cause for it.
 
 ### Unsolved Bugs
 
