@@ -44,3 +44,23 @@
 ### Main Menus
 
 ![](assets/documentation/menu-main-val.png)
+
+### Dessert Menu
+
+![](assets/documentation/menu-desserts-val.png)
+
+### Drinks Menu
+
+![](assets/documentation/menu-drink-val.png)
+
+### Booking
+
+![](assets/documentation/booking-val.png)
+
+### Make Booking
+
+![](assets/documentation/make-booking-val.png)
+
+### View Booking
+
+![](assets/documentation/view-booking-val.png)
