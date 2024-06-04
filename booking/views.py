@@ -72,7 +72,7 @@ def view_bookings(request):
         booking_id = request.POST.get('booking_id')
         booking = get_object_or_404(BookingSystem, pk=booking_id)
         booking.delete()
-        return redirect('allauth/account/view_bookings.html')
+        return redirect('view-bookings')
 
     return render(request, 'allauth/account/view_bookings.html', {'bookings': bookings})
 
