@@ -8,25 +8,24 @@ Booking
 <main>
     {% if user.is_authenticated %}
     <h2 class="booking-heading">Booking</h2>
-    <ul class="booking-options">
+    <div class="booking-options">
         <a href="make_booking.html" aria-label="Link to make booking page">
-            <li class="bookings-choice">
-                <div class="makebookings">Make Booking</div>
-            </li>
+            <div class="makebookings">Make Booking</div>
+
         </a>
         <a href="view_bookings.html" aria-label="link to view bookings page">
-            <li class="bookings-choice">
-                <div class="makebookings">View Bookings</div>
-            </li>
+            <div class="makebookings">View Bookings</div>
         </a>
-    </ul>
-    <p class="login-link"><a href="login/" class="login-register" aria-label="link to login page">Sign in</a> If you do not have a account create one <a
-            href="register.html" class="login-register" aria-label="link to register page">here.</a>
+    </div>
+    <p class="login-link"><a href="login/" class="login-register" aria-label="link to login page">Sign in</a> If you do
+        not have a account create one <a href="register.html" class="login-register"
+            aria-label="link to register page">here.</a>
     </p>
     {% else %}
     <div class="need-login">
         <p>In order to make a booking you need to be signed into an account.</p>
-        <p class="login-link-need"><a href="login" class="login-register" aria-label="link to login page">Sign in</a> If you do not have a account
+        <p class="login-link-need"><a href="login" class="login-register" aria-label="link to login page">Sign in</a> If
+            you do not have a account
             create one <a href="register.html" class="login-register" aria-label="link to register page">here.</a>
     </div>
     {% endif %}
