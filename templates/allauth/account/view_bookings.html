@@ -5,19 +5,18 @@ View Bookings
 
 {% block content %}
 {% load static %}
-    <main>
-        <h2 class="view-bookings-title">View Bookings</h1>
-            {% for booking in bookings %}
-                <li>
-                    {{ booking.customer_name }} - {{ booking.date }} at {{ booking.time }}
-                    <form method="post" class="view-bookings-form">
-                        {% csrf_token %}
-                        <button type="submit" class="delete-btn">Delete</button>
-                    </form>
-                </li>
-            {% empty %}
-
-            {% endfor %}
-
-    </main>
+<main>
+    <h2 class="view-bookings-title">View Bookings</h2>
+    {% for booking in bookings %}
+    {{ booking.customer_name }} - {{ booking.date }} at {{ booking.time }}
+    <form method="post" class="view-bookings-form">
+        {% csrf_token %}
+        <input type="hidden" name="booking_id" value="{{ booking.id }}">
+        <button type="submit" class="delete-btn" name="delete">Delete</button>
+    </form>
+    {% empty %}
+    <p>No bookings found.</p>
+    {% endfor %}
+    <a href="make_booking.html" class="makebookingfromviews">Make a booking here</a>
+</main>
 {% endblock %}
