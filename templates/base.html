@@ -1,11 +1,13 @@
 {% load static %}
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="Description" content="Enter your description here" />
-    <link rel="icon" href="{%static 'images/icons8-oak-16.png'%}" />
-    <link rel="icon" href="{%static 'images/icons8-oak-32.png'%}" />
+    <meta name="Description" content="Oak, Restaurant, Booking">
+    <link rel="icon" href="{%static 'images/icons8-oak-16.png'%}">
+    <link rel="icon" href="{%static 'images/icons8-oak-32.png'%}">
     <link rel="icon" type="image/x-icon" href="{% static 'favicon/icons8-oak-32' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -84,10 +86,10 @@
             </div>
         </div>
     </header>
-    <main>
+    
         {% block content %}
         {% endblock %}
-    </main>
+    
     <footer>
         <ul id="links">
             <li>
@@ -116,3 +118,4 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/17b1279bab.js" crossorigin="anonymous"></script>
+</html>
