@@ -6,9 +6,16 @@ Home
 {% block content %}
 {% load static %}
     <main>
+        <div class="login-or-out">
+            {% if user.is_authenticated %}
+            <p>Logged in as "{{ user.username }}"<a href="{% url 'logout' %}" class="logoutlink" aria-label="logout link"> Logout</a></p>
+            {% else %}
+            <p>Please <a href="{% url 'login' %}" class="logoutlink" aria-label="login link">Login</a> here</p>
+            {% endif %}
+        </div>
         <h2 class="welcome-heading">Welcome To The Oak</h2>
         <img id="slideshowImage" src="{% static 'images/dining-image.jpg' %}" class="dining" aria-label="A slideshow of
-        images that show various parts of the restaurant">
+        images that show various parts of the restaurant" alt="Slideshow of images that show various parts of the restaurant">
         <button id="nextImage">Next</button>
         <h3 class="about">About</h3>
         <p class="about-text">This is a state of the art restaurant which serves a wide variety
@@ -21,8 +28,9 @@ Home
     <script>
         const SlideshowImagesList = [
             "{% static 'images/dining-image.jpg' %}",
-            "{% static 'images/wine-image.jpg' %}",
+            "{% static 'images/close-up-meal.jpeg' %}",
             "{% static 'images/steak-image.jpg' %}",
+            "{% static 'images/pouring-wine.jpg' %}"
         ];
     </script>
 {% endblock %}
