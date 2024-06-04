@@ -264,6 +264,7 @@ input{
     position: relative;
     font-family: 'Dancing Script';
     font-weight: 200;
+    margin-top: 300px;
 }
 
 .login-register{
@@ -294,6 +295,10 @@ a.logoutlink{
         position: static;
         width: 100%;
     }
+
+    .dining{
+        width: 100%;
+    }
 }
 
 a.login-to-register {
@@ -309,6 +314,7 @@ a.login-to-register {
     width: fit-content;
     padding: 10px;
     border-radius: 10px;
+    margin-bottom: 300px;
 }
 
 ul#links-one{
@@ -351,4 +357,25 @@ ul#links-one{
     padding: 20px;
     font-family: 'Dancing Script';
     align-items: center;
+}
+
+a.makebookingfromviews {
+    text-align: center;
+    color: black;
+    display: block;
+    margin-top: 500px;
+    font-family: 'Dancing Script';
+    text-decoration: underline;
+    font-size: larger;
+}
+
+h2.info-title {
+    text-align: center;
+    font-family: 'Dancing Script';
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+p.register-link {
+    margin-top: 340px;
 }
