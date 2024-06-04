@@ -99,7 +99,8 @@ DATABASES = {
 CSRF_TRUSTED_ORIGINS = [
     "https://*.codeanyapp.com",
     "https://*.herokuapp.com",
-    "https://8000-oscarbutler-restaurant-m3d50u4ixqt.ws-eu110.gitpod.io"
+    "https://8000-oscarbutler-restaurant-m3d50u4ixqt.ws-eu110.gitpod.io",
+    "https://8000-oscarbutler-restaurant-m3d50u4ixqt.ws-eu114.gitpod.io"
 ]
 
 SECRET_KEY = os.environ.get("SECRET_KEY")
