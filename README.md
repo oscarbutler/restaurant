@@ -197,6 +197,10 @@ it will show you if you are logged in and an option to logout, all the user need
 - Gitpod was used to write the code.
 - Git Hub was where the repository and code is stored.
 
+- Whitenoise to help handle the static files.
+- W3C Validator is used to make sure all the html is valid
+- W3C CSS validator was used to check the css was all valid
+
 ## Testing
 
 - Please visit [TESTING.md](TESTING.md).
