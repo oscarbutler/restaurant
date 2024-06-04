@@ -1,5 +1,3 @@
-[text](TESTING.md)
-
 # Testing
 
 ## Manual Testing
