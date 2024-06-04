@@ -12,3 +12,8 @@
 | Link to mains page | Click a link | Move to mains page | Yes | Yes | --- |
 | Link to desserts page | Click a link | Move to desserts page | Yes | Yes | --- |
 | Link to drinks page | Click a link | Move to drinks page | Yes | Yes | --- |
+| Link to booking page | Click a link | Move to booking page | Yes | Yes | --- |
+| Link to sign up page | Click a link | Move to login page | Yes | Yes | --- |
+| Link to register page | Click a link | Move to register page | Yes | Yes | --- |
+| Make booking form | create reservation | Make a booking which relays to admin | Yes | Yes | --- |
+| Delete booking | delete booking | remove a booking that previously been made | Yes | Yes | --- |
