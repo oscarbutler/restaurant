@@ -55,7 +55,7 @@ def register(response):
         if form.is_valid():
             form.save()
         
-        return redirect("allauth/account/index.html")
+        return redirect("index.html")
     else:
         form = RegisterForm()
 
@@ -74,7 +74,7 @@ def view_bookings(request):
         booking.delete()
         return redirect('view-bookings')
 
-    return render(request, 'allauth/account/view_bookings.html', {'bookings': bookings})
+    return render(request, 'view_bookings.html', {'bookings': bookings})
 
 def menu_desserts(request):
     return render(request, 'allauth/account/menu-desserts.html')
