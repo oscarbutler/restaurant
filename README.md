@@ -204,6 +204,10 @@ The link to the food image I have used is from this [website](https://eu.usatoda
 
 The dining image I have found is from this [website](https://www.pexels.com/photo/wine-glasses-on-table-tops-941861/)
 
+The second image in the slideshow is from this [website](https://luxurylaunches.com/wp-content/uploads/2016/06/Worlds-top-10-restaurants-1170x765.jpeg)
+
+The fourth image is from this [website](https://www.oliversmarket.com/make-me-a-match-pairing-wine-food/)
+
 ## Bugs
 
 ### Solved Bugs
