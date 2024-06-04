@@ -64,3 +64,7 @@
 ### View Booking
 
 ![](assets/documentation/view-booking-val.png)
+
+## CSS
+
+![](assets/documentation/oak-css.png)
