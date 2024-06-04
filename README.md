@@ -203,7 +203,7 @@ it will show you if you are logged in and an option to logout, all the user need
 
 ## Credits
 
-I learnt how to create the login and logout through this [video]('https://www.youtube.com/watch?v=z4lfVsb_7MA&t=375s')
+I learnt how to create the login and logout through this [video](https://www.youtube.com/watch?v=z4lfVsb_7MA&t=375s)
 
 I also learnt how to create the register form through this [video](https://www.youtube.com/watch?v=Ev5xgwndmfc&t=975s)
 
@@ -214,6 +214,10 @@ The dining image I have found is from this [website](https://www.pexels.com/phot
 The second image in the slideshow is from this [website](https://luxurylaunches.com/wp-content/uploads/2016/06/Worlds-top-10-restaurants-1170x765.jpeg)
 
 The fourth image is from this [website](https://www.oliversmarket.com/make-me-a-match-pairing-wine-food/)
+
+I used the same footer which I created in my my 'Man Utd project'.
+
+In order to get my favicons I used the website [fontawesome](https://fontawesome.com/)
 
 ## Bugs
 
@@ -238,4 +242,17 @@ class for register form" this shows the mistake I made as I didnt mean to add a 
 
 ## Deployment
 
-- This project is deployed in heroku.
+- My app was deployed to heroku
+
+- My database was deployed to Elephantsql
+
+Create a application
+ ![Dashboard](documentation/heroku_dashboard.png)
+
+ Go to the deploy section
+
+ ![Deploy](documentation/deploy_section.png)
+
+ Link your github account
+
+ ![Github](documentation/link_github.png)
