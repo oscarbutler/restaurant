@@ -28,4 +28,4 @@ urlpatterns = [
     path('login/register.html', views.register, name='make-booking'),
     path('login.html', views.login, name='make-booking'),
     path('login/info.html', views.info,),
-    path('login/view_bookings/', views.view_bookings, name='view-bookings'),]
+    path('login/view-bookings.html', views.view_bookings, name='view-bookings'),]
