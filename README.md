@@ -237,6 +237,9 @@ whitenoise storage. These errors on happened wheb debug was false, this made it 
 
 ### Unsolved Bugs
 
+There is one unsolved bug where due to the login template, after you go on the log in page the url will have 'login/'
+on it which can cause problems. This is a bug that I was unable to fix.
+
 ### Mistakes
 
 - In git commit ff582d0 I made a slight mistake in the text I used to describe the changes. It is "CMake a meta 
