@@ -255,12 +255,12 @@ class for register form" this shows the mistake I made as I didnt mean to add a 
 - My database was deployed to Elephantsql
 
 Create a application
- ![Dashboard](documentation/heroku_dashboard.png)
+ ![Dashboard](assets/documentation/heroku_dashboard.png)
 
  Go to the deploy section
 
- ![Deploy](documentation/deploy_section.png)
+ ![Deploy](assets/documentation/deploy_section.png)
 
  Link your github account
 
- ![Github](documentation/link_github.png)
+ ![Github](assets/documentation/documentation/link_github.png)
