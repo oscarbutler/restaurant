@@ -264,3 +264,7 @@ Create a application
  Link your github account
 
  ![Github](assets/documentation/link_github.png)
+
+ ![Config Vars](assets/documentation/config.png)
+
+ ![Buildpacks](assets/documentation/buildpacks_heroku.png)
