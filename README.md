@@ -265,6 +265,14 @@ Create a application
 
  ![Github](assets/documentation/link_github.png)
 
+Add the correct configurations
+
  ![Config Vars](assets/documentation/config.png)
 
+Add appropriate buildpacks
+
  ![Buildpacks](assets/documentation/buildpacks_heroku.png)
+
+Manually deploy the workspace
+
+![Deploy](assets/documentation/deploy.png)
