@@ -263,4 +263,4 @@ Create a application
 
  Link your github account
 
- ![Github](assets/documentation/documentation/link_github.png)
+ ![Github](assets/documentation/link_github.png)
