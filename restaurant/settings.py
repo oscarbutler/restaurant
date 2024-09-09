@@ -25,7 +25,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-u_yff%tq+!9f^1dzfs4mc802_sc@#$-ry!^wu4i*k2q^ogsx9b'
+SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -86,23 +86,20 @@ WSGI_APPLICATION = 'restaurant.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 # DATABASES = {
 #     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 # }
 
-DATABASES = {
-    'default': dj_database_url.parse(
-        os.environ.get("DATABASE_URL", "sqlite:///db.sqlite3")
-    )
-}
-
+# DATABASES = {
+#     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+# }
 
 CSRF_TRUSTED_ORIGINS = [
     "https://*.codeanyapp.com",
@@ -111,7 +108,6 @@ CSRF_TRUSTED_ORIGINS = [
     "https://8000-oscarbutler-restaurant-m3d50u4ixqt.ws-eu114.gitpod.io",
     "https://8000-oscarbutler-restaurant-qbd9f5nfct7.ws.codeinstitute-ide.net"
 ]
-# SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
