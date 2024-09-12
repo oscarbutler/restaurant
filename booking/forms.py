@@ -7,15 +7,18 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 from django.forms import Select
 from .constants import different_times
+from datetime import date
 
 class reservationForm(forms.ModelForm):
     class Meta:
         model = BookingSystem
-        fields = ['name', 'phone_number', 'email', 'date', 'time', 'number_of_people', ]
+        fields = ['name', 'phone_number', 'email', 'date', 'time', 'number_of_people']
         widgets = {
             'date': forms.DateInput(attrs={'type': 'date'}),
             'time': forms.Select(choices=different_times),
         }
+
+    def clean_date(self):
 
     def TableLimit(self):
         tables = super().clean()
@@ -28,6 +31,7 @@ class reservationForm(forms.ModelForm):
                 raise forms.ValidationError("There are no available tables for this time slot. Please choose a different time.")
         
         return tables
+
 class RegisterForm(UserCreationForm):
     email = models.EmailField()
     
