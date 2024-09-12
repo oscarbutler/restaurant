@@ -82,4 +82,5 @@ def menu_desserts(request):
 def menu_main(request):
     return render(request, 'allauth/account/menu-main.html')
 
-def edit_booking():
+def edit_booking(request, booking_id):
+    booking = get_object_or_404(BookingSystem, id=booking_id)
