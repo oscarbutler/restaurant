@@ -81,3 +81,5 @@ def menu_desserts(request):
 
 def menu_main(request):
     return render(request, 'allauth/account/menu-main.html')
+
+def edit_booking():
