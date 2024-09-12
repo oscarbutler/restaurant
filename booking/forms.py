@@ -20,6 +20,9 @@ class reservationForm(forms.ModelForm):
 
     def clean_date(self):
         booking_clean_date = self.cleaned_data.get('date')
+        if booking_clean_date and booking_clean_date < date.today():
+            raise forms.ValidationError("You cant make a booking for a past date.")
+        return booking_clean_date
 
     def TableLimit(self):
         tables = super().clean()
