@@ -89,3 +89,7 @@ def edit_booking(request, booking_id):
         if form.is_valid():
             form.save()
             return redirect('view_bookings')
+    else:
+        form = reservationForm(instance=booking)
+    
+    return render(request, 'allauth/account/edit-booking.html', {'form': form, 'booking': booking})
