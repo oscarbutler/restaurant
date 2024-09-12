@@ -84,3 +84,5 @@ def menu_main(request):
 
 def edit_booking(request, booking_id):
     booking = get_object_or_404(BookingSystem, id=booking_id)
+    if request.method == 'POST':
+        form = reservationForm(request.POST, instance=booking)
