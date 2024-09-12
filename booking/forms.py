@@ -19,6 +19,7 @@ class reservationForm(forms.ModelForm):
         }
 
     def clean_date(self):
+        booking_clean_date = self.cleaned_data.get('date')
 
     def TableLimit(self):
         tables = super().clean()
