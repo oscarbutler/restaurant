@@ -12,7 +12,7 @@ View Bookings
     <div class="booking-item">
         <p>{{ booking.name }} - {{ booking.date }} at {{ booking.time }}</p>
         <div class="booking-actions">
-            <a href="{% url 'edit_booking' booking.id %}">Edit</a>
+            <a href="{% url 'edit_booking' booking.id %}" class="btn btn-primary" aria-label="editbookingbutton">Edit</a>
 
             <form method="post" class="view-bookings-form">
                 {% csrf_token %}
