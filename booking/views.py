@@ -44,7 +44,7 @@ def MakeBooking(request):
             booking = form.save(commit=False)
             booking.user_id = request.user.id 
             booking.save()
-            return render(request, 'allauth/account/booking_success.html')
+            return render(request, 'allauth/account/index.html')
     else:
         form = reservationForm()
     return render(request, 'allauth/account/make_booking.html', {'form': form})
