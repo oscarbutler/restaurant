@@ -2,6 +2,7 @@ from django.urls import path
 from . import views
 from .views import MakeBooking
 from .views import register
+from .views import edit_booking
 from django.contrib.auth import views as auth_views
 
 urlpatterns = [
@@ -29,4 +30,6 @@ urlpatterns = [
     path('login.html', views.login, name='make-booking'),
     path('login/info.html', views.info,),
     path('login/view_bookings.html', views.view_bookings, name='view_bookings'),
+    path('edit_booking/<int:booking_id>', views.edit_booking, name='edit_booking'),
+    path('make_booking', views.MakeBooking, name='make_booking'),
     ]
