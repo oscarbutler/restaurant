@@ -7,13 +7,20 @@ View Bookings
 {% load static %}
 <main>
     <h2 class="view-bookings-title">View Bookings</h2>
+    
     {% for booking in bookings %}
-    {{ booking.customer_name }} - {{ booking.date }} at {{ booking.time }}
-    <form method="post" class="view-bookings-form">
-        {% csrf_token %}
-        <input type="hidden" name="booking_id" value="{{ booking.id }}">
-        <button type="submit" class="delete-btn" name="delete">Delete</button>
-    </form>
+    <div class="booking-item">
+        <p>{{ booking.name }} - {{ booking.date }} at {{ booking.time }}</p>
+        <div class="booking-actions">
+            <a href="{% url 'edit_booking' booking.id %}">Edit</a>
+
+            <form method="post" class="view-bookings-form">
+                {% csrf_token %}
+                <input type="hidden" name="booking_id" value="{{ booking.id }}">
+                <button type="submit" class="delete-btn" name="delete">Delete</button>
+            </form>
+        </div>
+    </div>
     {% empty %}
     <p>No bookings found.</p>
     {% endfor %}
