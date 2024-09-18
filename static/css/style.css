@@ -279,21 +279,6 @@ a.logoutlink{
     text-decoration: underline;
 }
 
-@media screen and (max-width: 768px) {
-    header {
-        text-align: center;
-    }
-
-    #menu {
-        position: static;
-        width: 100%;
-    }
-
-    .dining{
-        width: 100%;
-    }
-}
-
 a.login-to-register {
     color: black;
     text-decoration: underline;
@@ -371,4 +356,19 @@ h2.info-title {
 
 p.register-link {
     margin-top: 340px;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+
+    #menu {
+        position: static;
+        width: 100%;
+    }
+
+    .dining{
+        width: 100%;
+    }
 }
