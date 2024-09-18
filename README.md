@@ -33,7 +33,7 @@ AC1: A site user should be able to book a reservation at the restaurant successf
 
 AC2: The site user should be able to choose a specific date and time for their reservation.
 
-![Reservation](assets/documentation/user-reservation.png)
+![Reservation](documentation/user-reservation.png)
 #### Booking Availability
 
 - When working at a restaurant you should be able to manage the tables in order to make it as efficient as possible.
@@ -48,7 +48,7 @@ The site user should be able to give the person who is making a reservation deta
 AC1: The website should show available dates and times that the user can choose from.
 AC2: The user should see be asked how many people would they want to take with them to the restaurant.
 
-![Details](assets/documentation/user-details.png)
+![Details](documentation/user-details.png)
 #### Device Compatibility
 
 As a site user I should be able to user the website on a variety of devices.
@@ -57,7 +57,7 @@ AC1: The appearance of the website should change depending on the device I use.
 
 AC2: Every part of the website should be compatible including forms, images, header and footer.
 
-![Compatibility](assets/documentation/user-compatibility.png)
+![Compatibility](documentation/user-compatibility.png)
 #### View Menu
 
 Users should be able to view what the restaurant contains before making a booking.
@@ -66,21 +66,21 @@ The site should show a variety of foods and drinks in an presentable way.
 AC1: Show a list of clear display of what the food or drink is.
 
 
-![Menu](assets/documentation/user-menu.png)
+![Menu](documentation/user-menu.png)
 #### Delete Reservation
 
 AC1: An user needs to be able to delete reservations in order for them to be able to change their mind in the future and a easy way to cancel.
 
 AC2: This should also remove the booking in the admin page.
 
-![Cancel](assets/documentation/user-reservation.png)
+![Cancel](documentation/user-reservation.png)
 #### Login
 
 AC1: The user should be able to log in to their account that they have previously registered
 
 AC2: The should be able to log in whenever they are on the website.
 
-![Login](assets/documentation/user-login.png)
+![Login](documentation/user-login.png)
 #### Login Message
 
 AC1: There should be a log in message to let the user know if they are logged in to their account.
@@ -92,7 +92,7 @@ AC1: There needs to be a easy way to logout of their account.
 
 AC2: Once logged out the user should know and be able to find a way to log back in.
 
-![Logout](assets/documentation/user-logout.png)
+![Logout](documentation/user-logout.png)
 ## Design
 
 - I have chosen the design because it is simple but also very useful. This is because the user can see what the website contains
@@ -101,73 +101,73 @@ while being able to navigate with ease.
 ## Wireframes
 
 ### Desktop Device
-![](assets/documentation/oak-home.png)
+![](documentation/oak-home.png)
 
-![](assets/documentation/oak-info-desktop.png)
+![](documentation/oak-info-desktop.png)
 
-![Menu Starters](assets/documentation/oak-menu-starters.png)
+![Menu Starters](documentation/oak-menu-starters.png)
 
-![Menu Mains](assets/documentation/oak-menu-mains.png)
+![Menu Mains](documentation/oak-menu-mains.png)
 
-![Menu Desserts](assets/documentation/oak-menu-desserts.png)
+![Menu Desserts](documentation/oak-menu-desserts.png)
 
-![Menu Drinks](assets/documentation/oak-menu-drinks.png)
+![Menu Drinks](documentation/oak-menu-drinks.png)
 
-![](assets/documentation/oak-make-booking-desktop.png)
+![](documentation/oak-make-booking-desktop.png)
 
-![](assets/documentation/oak-view-booking-desktop.png)
+![](documentation/oak-view-booking-desktop.png)
 
-![](assets/documentation/oak-login-desktop.png)
+![](documentation/oak-login-desktop.png)
 
-![](assets/documentation/oak-register-desktop.png)
+![](documentation/oak-register-desktop.png)
 
-![](assets/documentation/oak-booking-desktop.png)
+![](documentation/oak-booking-desktop.png)
 
 ### Tablet Device
-![](assets/documentation/oak-home-tablet.png)
+![](documentation/oak-home-tablet.png)
 
-![](assets/documentation/oak-info-tablet.png)
+![](documentation/oak-info-tablet.png)
 
-![](assets/documentation/oak-menu-starters-tablet.png)
+![](documentation/oak-menu-starters-tablet.png)
 
-![](assets/documentation/oak-menu-mains-tablet.png)
+![](documentation/oak-menu-mains-tablet.png)
 
-![](assets/documentation/oak-menu-desserts-tablet.png)
+![](documentation/oak-menu-desserts-tablet.png)
 
-![](assets/documentation/oak-menu-drinks-tablet.png)
+![](documentation/oak-menu-drinks-tablet.png)
 
-![](assets/documentation/oak-make-booking-tablet.png)
+![](documentation/oak-make-booking-tablet.png)
 
-![](assets/documentation/oak-view-booking-tablet.png)
+![](documentation/oak-view-booking-tablet.png)
 
-![](assets/documentation/oak-login-tablet.png)
+![](documentation/oak-login-tablet.png)
 
-![](assets/documentation/oak-register-tablet.png)
+![](documentation/oak-register-tablet.png)
 
-![](assets/documentation/oak-booking-tablet.png)
+![](documentation/oak-booking-tablet.png)
 
 ### Mobile Device
-![](assets/documentation/oak-home-mobile.png)
+![](documentation/oak-home-mobile.png)
 
-![](assets/documentation/oak-info-mobile.png)
+![](documentation/oak-info-mobile.png)
 
-![](assets/documentation/oak-menu-starters-mobile.png)
+![](documentation/oak-menu-starters-mobile.png)
 
-![](assets/documentation/oak-menu-mains-mobile.png)
+![](documentation/oak-menu-mains-mobile.png)
 
-![](assets/documentation/oak-menu-desserts-mobile.png)
+![](documentation/oak-menu-desserts-mobile.png)
 
-![](assets/documentation/oak-menu-drinks-mobile.png)
+![](documentation/oak-menu-drinks-mobile.png)
 
-![](assets/documentation/oak-make-booking-mobile.png)
+![](documentation/oak-make-booking-mobile.png)
 
-![](assets/documentation/oak-view-booking-mobile.png)
+![](documentation/oak-view-booking-mobile.png)
 
-![](assets/documentation/oak-login-mobile.png)
+![](documentation/oak-login-mobile.png)
 
-![](assets/documentation/oak-register-mobile.png)
+![](documentation/oak-register-mobile.png)
 
-![](assets/documentation/oak-booking-mobile.png)
+![](documentation/oak-booking-mobile.png)
 
 ## Features
 
@@ -175,7 +175,7 @@ while being able to navigate with ease.
 from an options of days and times. This form makes sure that there are tables available at the specific
 time that the user has asked for. Once succesfully booked a reservation this information will be placed in an admin page
 which can be seen by users with access.
-![](assets/documentation/oak-reservation-form.png)
+![](documentation/oak-reservation-form.png)
 
 - The admin page is a part of the project which specific people can access. They can see all the bookings that have been
 made and the time and date they have booked a table for. There are filters which I have placed through the admin.py page,
@@ -184,12 +184,12 @@ this can make the user of the admin page's task much easier since they can look 
 - In the website there is a way to register an account with the website. This will allow them to log in to the account which
 is crucial in order to make bookings. The form for this will make sure that the password that the user has is secure enough
 so that their account is safe.
-![](assets/documentation/oak-res-form.png)
+![](documentation/oak-res-form.png)
 - Along with a register system there also need a log in system which will allow the user to log in to the website with just
 their username and password which makes it very simple. This will allow them to log in and make a booking, since it has been
 made to only show the booking page for when people are logged in. This is to ensure that we know who is making each
 reservation.
-![](assets/documentation/oak-login.png)
+![](documentation/oak-login.png)
 
 - Since there is a login and register there also needs to be a logout system which is very simple for the user. On each page
 it will show you if you are logged in and an option to logout, all the user needs to do it press the link that is available.
@@ -264,24 +264,24 @@ class for register form" this shows the mistake I made as I didnt mean to add a 
 - My database was deployed to Elephantsql
 
 Create a application
- ![Dashboard](assets/documentation/heroku_dashboard.png)
+ ![Dashboard](documentation/heroku_dashboard.png)
 
  Go to the deploy section
 
- ![Deploy](assets/documentation/deploy_section.png)
+ ![Deploy](documentation/deploy_section.png)
 
  Link your github account
 
- ![Github](assets/documentation/link_github.png)
+ ![Github](documentation/link_github.png)
 
 Add the correct configurations
 
- ![Config Vars](assets/documentation/config.png)
+ ![Config Vars](documentation/config.png)
 
 Add appropriate buildpacks
 
- ![Buildpacks](assets/documentation/buildpacks_heroku.png)
+ ![Buildpacks](documentation/buildpacks_heroku.png)
 
 Manually deploy the workspace
 
-![Deploy](assets/documentation/deploy.png)
+![Deploy](documentation/deploy.png)
