@@ -33,6 +33,7 @@ AC1: A site user should be able to book a reservation at the restaurant successf
 
 AC2: The site user should be able to choose a specific date and time for their reservation.
 
+![Reservation](assets/documentation/user-reservation.png)
 #### Booking Availability
 
 - When working at a restaurant you should be able to manage the tables in order to make it as efficient as possible.
@@ -47,6 +48,7 @@ The site user should be able to give the person who is making a reservation deta
 AC1: The website should show available dates and times that the user can choose from.
 AC2: The user should see be asked how many people would they want to take with them to the restaurant.
 
+![Details](assets/documentation/user-details.png)
 #### Device Compatibility
 
 As a site user I should be able to user the website on a variety of devices.
@@ -55,6 +57,7 @@ AC1: The appearance of the website should change depending on the device I use.
 
 AC2: Every part of the website should be compatible including forms, images, header and footer.
 
+![Compatibility](assets/documentation/user-compatibility.png)
 #### View Menu
 
 Users should be able to view what the restaurant contains before making a booking.
@@ -62,30 +65,34 @@ The site should show a variety of foods and drinks in an presentable way.
 
 AC1: Show a list of clear display of what the food or drink is.
 
+
+![Menu](assets/documentation/user-menu.png)
 #### Delete Reservation
 
 AC1: An user needs to be able to delete reservations in order for them to be able to change their mind in the future and a easy way to cancel.
 
 AC2: This should also remove the booking in the admin page.
 
+![Cancel](assets/documentation/user-reservation.png)
 #### Login
 
 AC1: The user should be able to log in to their account that they have previously registered
 
 AC2: The should be able to log in whenever they are on the website.
 
+![Login](assets/documentation/user-login.png)
 #### Login Message
 
 AC1: There should be a log in message to let the user know if they are logged in to their account.
 
 AC2: It should be a clear message for the user to see.
-
 #### Logout
 
 AC1: There needs to be a easy way to logout of their account.
 
 AC2: Once logged out the user should know and be able to find a way to log back in.
 
+![Logout](assets/documentation/user-logout.png)
 ## Design
 
 - I have chosen the design because it is simple but also very useful. This is because the user can see what the website contains
