@@ -248,6 +248,8 @@ class for register form" this shows the mistake I made as I didnt mean to add a 
 - Also in the git commit "984f726" I also accidentally make a mistake in the text I made to describe the git commit.
 "Add fiCreate booking function", the mistake it that there is "fi on the start of the word "create".
 
+- In the directory the html files are in an "alluth/account" but they should be in the base templates folder.
+
 ## Deployment
 
 - My app was deployed to heroku
