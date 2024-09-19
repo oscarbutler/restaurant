@@ -38,6 +38,8 @@ class reservationForm(forms.ModelForm):
 
     def clean():
         reservation_data = super().clean()
+        date = reservation_data.get('date')
+        time = reservation_data.get('time')
 
 class RegisterForm(UserCreationForm):
     email = models.EmailField()
