@@ -36,7 +36,7 @@ class reservationForm(forms.ModelForm):
         
         return tables
 
-    def clean():
+    def clean(self):
         reservation_data = super().clean()
         date = reservation_data.get('date')
         time = reservation_data.get('time')
@@ -44,11 +44,7 @@ class reservationForm(forms.ModelForm):
         max_reservations = 10
 
         if date and time:
-            AmountOfBookings = BookingSystem.objects.filter(date=date, time=time).count()
-            if AmountOfBookings >= 10:
-                raise forms.ValidationError("There are no available tables for this time slot. Please choose a different time.")
-        
-        return tables
+            reservations = BookingSystem.objects.filter(date=date, time=time).count()
 
 class RegisterForm(UserCreationForm):
     email = models.EmailField()
