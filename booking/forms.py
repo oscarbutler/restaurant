@@ -36,6 +36,8 @@ class reservationForm(forms.ModelForm):
         
         return tables
 
+    def clean():
+
 class RegisterForm(UserCreationForm):
     email = models.EmailField()
     
