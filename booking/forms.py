@@ -43,6 +43,13 @@ class reservationForm(forms.ModelForm):
 
         max_reservations = 10
 
+        if date and time:
+            AmountOfBookings = BookingSystem.objects.filter(date=date, time=time).count()
+            if AmountOfBookings >= 10:
+                raise forms.ValidationError("There are no available tables for this time slot. Please choose a different time.")
+        
+        return tables
+
 class RegisterForm(UserCreationForm):
     email = models.EmailField()
     
