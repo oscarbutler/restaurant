@@ -41,6 +41,8 @@ class reservationForm(forms.ModelForm):
         date = reservation_data.get('date')
         time = reservation_data.get('time')
 
+        max_reservations = 10
+
 class RegisterForm(UserCreationForm):
     email = models.EmailField()
     
