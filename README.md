@@ -96,6 +96,9 @@ AC2: Once logged out the user should know and be able to find a way to log back 
 
 ## About
 
+This is a restaurant booking system. The objective of this is to allow the user to succesfully book a reservation.
+It should also allow the user to edit and view the booking they have made.
+
 ## Design
 
 - I have chosen the design because it is simple but also very useful. This is because the user can see what the website contains
