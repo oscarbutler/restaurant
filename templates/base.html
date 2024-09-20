@@ -72,7 +72,6 @@
                                     </li>
                                 </ul>
                             </div>
-                            <!-- </a> -->
                         </li>
                         <li class="menu-booking">
                             <a href="booking.html" aria-label="link to booking page">
@@ -87,33 +86,39 @@
         </div>
     </header>
     <main>
+        <div id="content">
+            {% include 'allauth/account/messages.html' %}
+        </div>
         {% block content %}
         {% endblock %}
     </main>
     <footer>
         <ul id="links">
             <li>
-                <!--Link to X/Twitter-->
                 <a href="https://www.x.com" target="_blank" rel="noopener" aria-label="Follow us on X!"><i
                         class="fa-brands fa-square-x-twitter"></i></a>
             </li>
             <li>
-                <!--Link to Instagram-->
                 <a href="https://www.instagram.com" target="_blank" rel="noopener"
                     aria-label="Follow us on Instagram!"><i class="fa-brands fa-square-instagram"></i></a>
             </li>
             <li>
-                <!--Link to Facebook-->
                 <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Follow us on Facebook!"><i
                         class="fa-brands fa-square-facebook"></i></a>
             </li>
             <li>
-                <!--Link to Youtube-->
                 <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="Watch us on Youtube!"><i
                         class="fa-brands fa-square-youtube"></i></a>
             </li>
         </ul>
     </footer>
+    <script>
+        setTimeout(function(){
+          if ($('#msg').length > 0) {
+            $('#msg').remove();
+          }
+        }, 2000)
+      </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
