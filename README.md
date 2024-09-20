@@ -196,15 +196,15 @@ it will show you if you are logged in and an option to logout, all the user need
 
 ## Technology Used
 
-- Python was used create 
+- Python was the main component used to create the server of the website.
 - HTML is used to make the main structure of the pages
 - CSS is used to decorate and style all the different pages.
 - Javascript is used to create interactive section in the website
 - Bootstrap was also used to create an interactive website.
-- ElephantSql was used in order to host the database and store the data we will recieve.
+- Heroku was used in order to host the database and store the data we will recieve.
 - Gitpod was used to write the code.
 - Git Hub was where the repository and code is stored.
-
+- SQLite was used to develop the database
 - Whitenoise to help handle the static files.
 - W3C Validator is used to make sure all the html is valid
 - W3C CSS validator was used to check the css was all valid
