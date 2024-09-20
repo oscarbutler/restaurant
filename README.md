@@ -93,6 +93,9 @@ AC1: There needs to be a easy way to logout of their account.
 AC2: Once logged out the user should know and be able to find a way to log back in.
 
 ![Logout](documentation/user-logout.png)
+
+## About
+
 ## Design
 
 - I have chosen the design because it is simple but also very useful. This is because the user can see what the website contains
