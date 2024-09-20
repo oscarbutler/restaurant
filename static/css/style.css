@@ -125,7 +125,6 @@ footer{
 
 .menu-menu:hover .menu-list {
     display: block;
-
 }
 .menu-list{
     display: none;
@@ -352,6 +351,14 @@ h2.info-title {
     font-family: 'Dancing Script';
     font-weight: 600;
     text-decoration: underline;
+}
+
+.edit-title {
+    text-align: center;
+    font-family: 'Dancing Script';
+    font-weight: 600;
+    text-decoration: underline;
+    padding-top: 20px
 }
 
 p.register-link {
