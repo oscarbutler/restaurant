@@ -237,6 +237,8 @@ I used the same footer which I created in my my 'Man Utd project'.
 
 In order to get my favicons I used the website [fontawesome](https://fontawesome.com/)
 
+I learnt how to add django messages using this [video](https://www.youtube.com/watch?v=VIx3HD2gRWQ)
+
 ## Bugs
 
 ### Solved Bugs
