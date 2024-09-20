@@ -7,8 +7,8 @@ from .models import BookingSystem
 from django.contrib.auth.forms import UserCreationForm
 from .forms import RegisterForm
 from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 
-# Create your views here.
 def message(request):
     return HttpResponse("Test")
 
@@ -21,14 +21,10 @@ def menu(request):
 def info(request):
     return render(request, 'allauth/account/info.html')
 
-# def menu_main(request):
-#     return render(request, 'menu-main.html')
+    return render(request, 'menu-main.html')
 
 def menu_starters(request):
     return render(request, 'allauth/account/menu-starters.html')
-
-# def menu_desserts(request):
-#     return render(request, 'menu-desserts.html')
 
 def booking(request):
     return render(request, 'allauth/account/booking.html')
@@ -44,6 +40,7 @@ def MakeBooking(request):
             booking = form.save(commit=False)
             booking.user_id = request.user.id 
             booking.save()
+            messages.success(request, 'Booking successfully made!')
             return render(request, 'allauth/account/index.html')
     else:
         form = reservationForm()
@@ -88,6 +85,7 @@ def edit_booking(request, booking_id):
         form = reservationForm(request.POST, instance=booking)
         if form.is_valid():
             form.save()
+            messages.success(request, 'You Have Successfully Changed Your Reservation!')
             return redirect('view_bookings')
     else:
         form = reservationForm(instance=booking)
