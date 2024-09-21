@@ -220,6 +220,10 @@ I have used this because I find that it is very appealing for a website as it gi
 
 I have mixed this with a font weight in css to make the font look thicker and stand out more.
 
+## Choice Of Images
+
+For this project I have only used four different images. These can be found on the home page. This displays a small slideshow of these images and they represent the foods that will be served at this restaurant. This gives the user of the website some insight into the type of restaurant the oak is.
+
 ## Technology Used
 
 - Python was the main component used to create the server of the website.
