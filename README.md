@@ -204,6 +204,12 @@ it will show you if you are logged in and an option to logout, all the user need
 
 ![](documentation/colorpalette.png)
 
+For this project I have used a mostly light color palette as this is very visually pleasing and to look. When using darker colours it can be difficult to look at for long periods of time.
+
+The header and footer are beige colour which is clearly visible compared to the background which is a plain white colour. The colours are very basic. 
+
+The text is also white usually with a background with the same beige colour as the header and footer. This makes a very pleasing aesthetic. There is also black text on the white background which is also very basic but shows it as very clear.
+
 ## Technology Used
 
 - Python was the main component used to create the server of the website.
