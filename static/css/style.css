@@ -113,6 +113,8 @@ footer{
     border-radius: 12px;
 }
 
+/* This code below was not originally mine */
+
 .dropbtn {
     list-style: none;
     background-color: rgba(225, 179, 130, 1);
@@ -149,6 +151,8 @@ footer{
 .dropdown-content a:hover {background-color: #ddd;}
   
 .dropdown:hover .dropdown-content {display: block;}
+
+/* The code above is not originally mine */
 
 .ul-options {
     list-style: none;
