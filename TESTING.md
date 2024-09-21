@@ -30,40 +30,40 @@
 
 ### Home Page
 
-![](assets/documentation/index-val.png)
+![](documentation/index-val.png)
 
 ### Information Page
 
-![](assets/documentation/info-val.png)
+![](documentation/info-val.png)
 
 ### Starters Menu
 
-![](assets/documentation/menu-starters-val.png)
+![](documentation/menu-starters-val.png)
 
 ### Main Menus
 
-![](assets/documentation/menu-main-val.png)
+![](documentation/menu-main-val.png)
 
 ### Dessert Menu
 
-![](assets/documentation/menu-desserts-val.png)
+![](documentation/menu-desserts-val.png)
 
 ### Drinks Menu
 
-![](assets/documentation/menu-drink-val.png)
+![](documentation/menu-drink-val.png)
 
 ### Booking
 
-![](assets/documentation/booking-val.png)
+![](documentation/booking-val.png)
 
 ### Make Booking
 
-![](assets/documentation/make-booking-val.png)
+![](documentation/make-booking-val.png)
 
 ### View Booking
 
-![](assets/documentation/view-booking-val.png)
+![](documentation/view-booking-val.png)
 
 ## CSS
 
-![](assets/documentation/oak-css.png)
+![](documentation/oak-css.png)
