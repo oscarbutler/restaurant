@@ -210,6 +210,10 @@ The header and footer are beige colour which is clearly visible compared to the 
 
 The text is also white usually with a background with the same beige colour as the header and footer. This makes a very pleasing aesthetic. There is also black text on the white background which is also very basic but shows it as very clear.
 
+## Typography
+
+![](documentation/dancing-script.png)
+
 ## Technology Used
 
 - Python was the main component used to create the server of the website.
