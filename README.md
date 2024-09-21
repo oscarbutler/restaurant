@@ -224,6 +224,10 @@ I have mixed this with a font weight in css to make the font look thicker and st
 
 For this project I have only used four different images. These can be found on the home page. This displays a small slideshow of these images and they represent the foods that will be served at this restaurant. This gives the user of the website some insight into the type of restaurant the oak is.
 
+## Favicon
+
+I have used this particular favicon because it is an oak tree leaf. This may be a small detail, but it is important for the favicon to have a straight forward connection to what the restaurant it.
+
 ## Technology Used
 
 - Python was the main component used to create the server of the website.
