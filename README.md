@@ -239,6 +239,8 @@ In order to get my favicons I used the website [fontawesome](https://fontawesome
 
 I learnt how to add django messages using this [video](https://www.youtube.com/watch?v=VIx3HD2gRWQ)
 
+I learnt and altered my drop down menu for the 'menu' function in the header through this website [W3School](https://www.w3schools.com/howto/howto_css_dropdown.asp)
+
 ## Bugs
 
 ### Solved Bugs
