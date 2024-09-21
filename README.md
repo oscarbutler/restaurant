@@ -200,6 +200,10 @@ reservation.
 - Since there is a login and register there also needs to be a logout system which is very simple for the user. On each page
 it will show you if you are logged in and an option to logout, all the user needs to do it press the link that is available.
 
+## Colour Palette
+
+![](documentation/colorpalette.png)
+
 ## Technology Used
 
 - Python was the main component used to create the server of the website.
