@@ -214,6 +214,12 @@ The text is also white usually with a background with the same beige colour as t
 
 ![](documentation/dancing-script.png)
 
+This font is called 'dancing script' which I have used in this document. I have used this from the google [fonts](https://fonts.google.com/specimen/Dancing+Script?query=dancing).
+
+I have used this because I find that it is very appealing for a website as it gives the impression the restaurant is higher class then the average restaurant.
+
+I have mixed this with a font weight in css to make the font look thicker and stand out more.
+
 ## Technology Used
 
 - Python was the main component used to create the server of the website.
