@@ -13,5 +13,3 @@ class BookingSystem(models.Model):
     date = models.DateField()
     time = models.TimeField(choices=different_times)
     number_of_people = models.IntegerField(choices=amount_of_people)
-    
-
