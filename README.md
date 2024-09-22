@@ -235,7 +235,8 @@ I have used this particular favicon because it is an oak tree leaf. This may be 
 - CSS is used to decorate and style all the different pages.
 - Javascript is used to create interactive section in the website
 - Bootstrap was also used to create an interactive website.
-- Heroku was used in order to host the database and store the data we will recieve.
+- Elephant Sql was used in order to host the database and store the data we will recieve.
+- Heroku was the website that was used in order to deploy the website.
 - Gitpod was used to write the code.
 - Git Hub was where the repository and code is stored.
 - SQLite was used to develop the database
@@ -301,6 +302,8 @@ class for register form" this shows the mistake I made as I didnt mean to add a 
 
 - My database was deployed to Elephantsql
 
+### Heroku
+
 Create a application
  ![Dashboard](documentation/heroku_dashboard.png)
 
@@ -323,3 +326,5 @@ Add appropriate buildpacks
 Manually deploy the workspace
 
 ![Deploy](documentation/deploy.png)
+
+### Elephant SQL
