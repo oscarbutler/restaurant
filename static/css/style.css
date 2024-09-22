@@ -90,6 +90,24 @@ footer{
     color: rgb(255, 255, 255);
 }
 
+#linksone {
+    text-align: center;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(225,179,130,1);
+}
+
+#linksone i {
+    font-size: 150%;
+    padding: 10%;
+    color: rgb(255, 255, 255);
+}
+
 .booking-message{
     background-color: rgba(225,179,130,1);
     width: fit-content;
