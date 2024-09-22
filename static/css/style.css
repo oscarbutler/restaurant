@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
+label{
+    display: block;
+    margin-bottom: 8px;
+}
+
 .menu-home {
     padding: 10px;
     text-align: center;
@@ -347,7 +352,7 @@ ul#links-one{
     position: sticky;
     bottom: 0;
     width: 100%;
-    background-color: rgba(225, 179, 130, 1);
+    background-color: rgba(225, 179, 130, 1)
 }
 
 #links-one i {
