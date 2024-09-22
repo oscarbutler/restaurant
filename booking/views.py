@@ -49,7 +49,7 @@ def MakeBooking(request):
             booking.user_id = request.user.id
             booking.save()
             messages.success(request, 'Booking successfully made!')
-            return render(request, 'allauth/account/index.html')
+            return render(request, 'allauth/account/view_bookings.html')
     else:
         form = reservationForm()
     return render(request, 'allauth/account/make_booking.html', {'form': form})
@@ -83,8 +83,7 @@ def view_bookings(request):
         booking.delete()
         return redirect('view_bookings.html')
 
-    return render
-    (request, 'allauth/account/view_bookings.html', {'bookings': bookings})
+    return render(request, 'allauth/account/view_bookings.html', {'bookings': bookings})
 
 
 def menu_desserts(request):
@@ -101,8 +100,7 @@ def edit_booking(request, booking_id):
         form = reservationForm(request.POST, instance=booking)
         if form.is_valid():
             form.save()
-            messages.success(
-                request, 'You Have Successfully Changed Your Reservation!')
+            messages.success(request, 'You Have Successfully Changed Your Reservation!')
             return redirect('view_bookings')
     else:
         form = reservationForm(instance=booking)
