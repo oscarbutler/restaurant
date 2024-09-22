@@ -328,3 +328,9 @@ Manually deploy the workspace
 ![Deploy](documentation/deploy.png)
 
 ### Elephant SQL
+
+![](documentation/sql-name.png)
+
+![](documentation/sql-region.png)
+
+![](documentation/sql-create.png)
