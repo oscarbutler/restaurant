@@ -329,8 +329,14 @@ Manually deploy the workspace
 
 ### Elephant SQL
 
+First Name the and decide the plan theat you have chosen.
+
 ![](documentation/sql-name.png)
 
+Select the region that is the closest to you/
+
 ![](documentation/sql-region.png)
+
+View if everything looks correct and finally create the database.
 
 ![](documentation/sql-create.png)
