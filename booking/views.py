@@ -49,7 +49,7 @@ def MakeBooking(request):
             booking.user_id = request.user.id
             booking.save()
             messages.success(request, 'Booking successfully made!')
-            return render(request, 'allauth/account/view_bookings.html')
+            return render(request, 'allauth/account/index.html')
     else:
         form = reservationForm()
     return render(request, 'allauth/account/make_booking.html', {'form': form})
