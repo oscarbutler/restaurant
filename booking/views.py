@@ -120,3 +120,8 @@ def create_review(request, booking_id):
             reviews.booking = booking
             reviews.save()
             return redirect('index.html', booking_id=booking.id)
+
+    else:
+        form = reviewForm()
+
+    return render(request, 'index.html', {'form': form, 'booking': booking})
