@@ -110,3 +110,6 @@ def edit_booking(request, booking_id):
 
 @login_required
 def admin_page(request):
+    if not request.user.is_superuser:
+        raise PermissionDenied
+    return render(request, '/admin')
