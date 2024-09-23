@@ -74,6 +74,11 @@
                             </a>
                         </li>
                         {% if user.is_authenticated and user.is_staff %}
+                        <li class="menu-admin">
+                            <a href="{% url 'admin:index' %}" aria-label="Link to admin page">
+                                <span>Staff</span>
+                            </a>
+                        </li>
                         {% endif %}
                     </ul>
                 </div>
