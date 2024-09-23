@@ -118,3 +118,5 @@ def create_review(request, booking_id):
             reviews = form.save(commit=False)
             reviews.user = request.user
             reviews.booking = booking
+            reviews.save()
+            return redirect('index.html', booking_id=booking.id)
