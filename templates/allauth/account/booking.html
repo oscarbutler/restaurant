@@ -1,6 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -79,16 +80,16 @@
     </header>
     <main>
         {% if user.is_superuser %}
-            <div class="admin_div">
-                <a href="{% url 'admin_page' %}" class="admin_link">Admin Panel</a>
-            </div>
+        <div class="admin_div">
+            <a href="{% url 'admin_page' %}" class="admin_link">Admin Panel</a>
+        </div>
         {% endif %}
         {% if user.is_authenticated %}
         <h2 class="booking-heading">Booking</h2>
         <div class="booking-options">
             <a href="make_booking.html" aria-label="Link to make booking page">
                 <div class="makebookings">Make Booking</div>
-    
+
             </a>
             <a href="view_bookings.html" aria-label="link to view bookings page">
                 <div class="makebookings">View Bookings</div>
@@ -97,41 +98,41 @@
         {% else %}
         <div class="need-login">
             <p>In order to make a booking you need to be signed into an account.</p>
-            <p class="login-link-need"><a href="login" class="login-register" aria-label="link to login page">Sign in</a> If
+            <p class="login-link-need"><a href="login" class="login-register" aria-label="link to login page">Sign
+                    in</a> If
                 you do not have a account
                 create one <a href="register.html" class="login-register" aria-label="link to register page">here.</a>
         </div>
         {% endif %}
     </main>
     <footer id="linksone">
-        <ul>
-            <li>
-                <a href="https://www.x.com" target="_blank" rel="noopener" aria-label="Follow us on X!"><i
-                        class="fa-brands fa-square-x-twitter"></i></a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com" target="_blank" rel="noopener"
-                    aria-label="Follow us on Instagram!"><i class="fa-brands fa-square-instagram"></i></a>
-            </li>
-            <li>
-                <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Follow us on Facebook!"><i
-                        class="fa-brands fa-square-facebook"></i></a>
-            </li>
-            <li>
-                <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="Watch us on Youtube!"><i
-                        class="fa-brands fa-square-youtube"></i></a>
-            </li>
-        </ul>
+        <li>
+            <a href="https://www.x.com" target="_blank" rel="noopener" aria-label="Follow us on X!"><i
+                    class="fa-brands fa-square-x-twitter"></i></a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Follow us on Instagram!"><i
+                    class="fa-brands fa-square-instagram"></i></a>
+        </li>
+        <li>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Follow us on Facebook!"><i
+                    class="fa-brands fa-square-facebook"></i></a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="Watch us on Youtube!"><i
+                    class="fa-brands fa-square-youtube"></i></a>
+        </li>
     </footer>
     <script>
-        setTimeout(function(){
-          if ($('#msg').length > 0) {
-            $('#msg').remove();
-          }
+        setTimeout(function () {
+            if ($('#msg').length > 0) {
+                $('#msg').remove();
+            }
         }, 2000)
-      </script>
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/17b1279bab.js" crossorigin="anonymous"></script>
+
 </html>
