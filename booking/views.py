@@ -8,7 +8,7 @@ from django.contrib.auth.forms import UserCreationForm
 from .forms import RegisterForm
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
-
+from django.core.exceptions import PermissionDenied
 
 def message(request):
     return HttpResponse("Test")
@@ -107,3 +107,6 @@ def edit_booking(request, booking_id):
 
     return render(request, 'allauth/account/edit-booking.html',
                   {'form': form, 'booking': booking})
+
+@login_required
+def admin_page(request):
