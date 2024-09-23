@@ -73,6 +73,8 @@
                                 </span>
                             </a>
                         </li>
+                        {% if user.is_authenticated and user.is_staff %}
+                        {% endif %}
                     </ul>
                 </div>
             </div>
