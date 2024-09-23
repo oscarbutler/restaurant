@@ -26,6 +26,11 @@ label{
     text-align: center;
 }
 
+.menu-admin{
+    padding: 10px;
+    text-align: center;
+}
+
 #menu {
     font-weight: 600;
     width: fit-content;
