@@ -17,4 +17,4 @@ class BookingSystem(models.Model):
 class review(models.model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     booking = models.ForeignKey(BookingSystem, on_delete=models.CASCADE, related_name='reviews')
-    review = models.TextField(max_length=5000, blank=True)
+    review = models.TextField(max_length=500, blank=True)
