@@ -55,18 +55,18 @@ def MakeBooking(request):
     return render(request, 'allauth/account/make_booking.html', {'form': form})
 
 
-def register(response):
-    if response.method == "POST":
-        form = RegisterForm(response.POST)
+def register(request):
+    if request.method == "POST":
+        form = RegisterForm(request.POST)
         if form.is_valid():
             form.save()
-
-        return redirect("index.html")
+            return redirect("index.html")
+        else:
+            messages.error(request, 'Unable to make booking')
     else:
         form = RegisterForm()
 
-        return render(response, "allauth/account/register.html",
-                                {"form": form})
+    return render(request, "allauth/account/register.html", {"form": form})
 
 
 def login(request):
