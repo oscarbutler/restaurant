@@ -30,9 +30,9 @@ urlpatterns = [
     path('login/register.html', views.register, name='make-booking'),
     path('login.html', views.login, name='make-booking'),
     path('login/info.html', views.info,),
-    path('login/view_bookings.html',
-         views.view_bookings, name='view_bookings'),
+    path('login/view_bookings.html', views.view_bookings, name='view_bookings'),
     path('edit_booking/<int:booking_id>',
          views.edit_booking, name='edit_booking'),
     path('make_booking', views.MakeBooking, name='make_booking'),
+    path('admin', views.admin_page, name='admin_page'),
     ]
