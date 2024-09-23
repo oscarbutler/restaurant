@@ -14,7 +14,7 @@ class BookingSystem(models.Model):
     time = models.TimeField(choices=different_times)
     number_of_people = models.IntegerField(choices=amount_of_people)
 
-class review(models.model):
+class Reviews(models.model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     booking = models.ForeignKey(BookingSystem, on_delete=models.CASCADE, related_name='reviews')
     review = models.TextField(max_length=500, blank=True)
