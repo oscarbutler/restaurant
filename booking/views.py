@@ -107,9 +107,3 @@ def edit_booking(request, booking_id):
 
     return render(request, 'allauth/account/edit-booking.html',
                   {'form': form, 'booking': booking})
-
-@login_required
-def admin_page(request):
-    if not request.user.is_superuser:
-        raise PermissionDenied
-    return render(request, '/admin')

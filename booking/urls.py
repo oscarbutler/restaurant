@@ -34,5 +34,4 @@ urlpatterns = [
     path('edit_booking/<int:booking_id>',
          views.edit_booking, name='edit_booking'),
     path('make_booking', views.MakeBooking, name='make_booking'),
-    path('admin', views.admin_page, name='admin_page'),
     ]
