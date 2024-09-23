@@ -113,3 +113,8 @@ def create_review(request, booking_id):
     booking = get_object_or_404(BookingSystem, id=booking_id, user=request.user)
 
     if request.method == 'POST':
+        form = reviewForm(request.POST)
+        if form.is_valid():
+            reviews = form.save(commit=False)
+            reviews.user = request.user
+            reviews.booking = booking
