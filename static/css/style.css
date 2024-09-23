@@ -339,6 +339,16 @@ input{
     padding: 7px;
 }
 
+.admin_div{
+    background-color: rgba(176,196,222, 0.7);
+    color: black;
+    font-size: large;
+    width: fit-content;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 7px;
+}
+
 a.logoutlink{
     color: black;
     text-decoration: underline;
