@@ -66,3 +66,6 @@ class RegisterForm(UserCreationForm):
         if commit:
             user.save()
         return user
+
+class reviewForm(forms.ModelForm)
+    class meta:
