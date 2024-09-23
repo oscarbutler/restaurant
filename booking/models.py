@@ -15,3 +15,4 @@ class BookingSystem(models.Model):
     number_of_people = models.IntegerField(choices=amount_of_people)
 
 class review(models.model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
