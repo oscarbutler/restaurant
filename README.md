@@ -340,3 +340,7 @@ Select the region that is the closest to you/
 View if everything looks correct and finally create the database.
 
 ![](documentation/sql-create.png)
+
+Obtain the url from elephant sql and use this to link to the project
+
+![](documentation/sql-info.png)
