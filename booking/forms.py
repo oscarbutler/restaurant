@@ -69,3 +69,8 @@ class RegisterForm(UserCreationForm):
 
 class reviewForm(forms.ModelForm)
     class meta:
+        model = Review
+        fields = [review_comment]
+        widgets = {
+            review_comment
+        }
