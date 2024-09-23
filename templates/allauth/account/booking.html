@@ -79,11 +79,6 @@
         </div>
     </header>
     <main>
-        {% if user.is_superuser %}
-        <div class="admin_div">
-            <a href="{% url 'admin_page' %}" class="admin_link">Admin Panel</a>
-        </div>
-        {% endif %}
         {% if user.is_authenticated %}
         <h2 class="booking-heading">Booking</h2>
         <div class="booking-options">
