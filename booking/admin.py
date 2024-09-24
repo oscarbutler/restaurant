@@ -9,3 +9,7 @@ class BookingAdmin(admin.ModelAdmin):
 
 @admin.register(Reviews)
 class ReviewsAdmin(admin.ModelAdmin):
+    list_display = ('name', 'review_comment', 'user', 'created_at')
+    list_filter = ('created_at',)
+    search_fields = ('name', 'review_comment')
+
