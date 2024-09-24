@@ -67,10 +67,10 @@ class RegisterForm(UserCreationForm):
             user.save()
         return user
 
-class reviewForm(forms.ModelForm)
-    class meta:
-        model = Review
-        fields = [review_comment]
+class reviewForm(forms.ModelForm):
+    class Meta:
+        model = Reviews
+        fields = ['name','review_comment']
         widgets = {
             'review_comment': forms.Textarea(attrs={'rows': 5}),
         }
