@@ -33,6 +33,8 @@ AC1: A site user should be able to book a reservation at the restaurant successf
 
 AC2: The site user should be able to choose a specific date and time for their reservation.
 
+Label: must-have
+
 ![Reservation](documentation/user-reservation.png)
 #### Booking Availability
 
@@ -41,12 +43,17 @@ AC2: The site user should be able to choose a specific date and time for their r
 AC1: There should be a maximum people that are allowed in a group when making a reservation in order to not over populate the restaurant.
 
 AC2: The system should change automatically when a reservation is made for the date and time to reduce chance of having to refuse people due to to many people being there.
+
+Label: must-have
+
 #### Details of Reservation
 
 The site user should be able to give the person who is making a reservation details about the restaurant so that they can choose based on their preferences.
 
 AC1: The website should show available dates and times that the user can choose from.
 AC2: The user should see be asked how many people would they want to take with them to the restaurant.
+
+Label: must-have
 
 ![Details](documentation/user-details.png)
 #### Device Compatibility
@@ -57,6 +64,8 @@ AC1: The appearance of the website should change depending on the device I use.
 
 AC2: Every part of the website should be compatible including forms, images, header and footer.
 
+Label: must-have
+
 ![Compatibility](documentation/user-compatibility.png)
 #### View Menu
 
@@ -65,6 +74,7 @@ The site should show a variety of foods and drinks in an presentable way.
 
 AC1: Show a list of clear display of what the food or drink is.
 
+Label: must-have
 
 ![Menu](documentation/user-menu.png)
 #### Delete Reservation
@@ -72,6 +82,8 @@ AC1: Show a list of clear display of what the food or drink is.
 AC1: An user needs to be able to delete reservations in order for them to be able to change their mind in the future and a easy way to cancel.
 
 AC2: This should also remove the booking in the admin page.
+
+Label: must-have
 
 ![Cancel](documentation/user-reservation.png)
 #### Login
@@ -81,11 +93,9 @@ AC1: The user should be able to log in to their account that they have previousl
 AC2: The should be able to log in whenever they are on the website.
 
 ![Login](documentation/user-login.png)
-#### Login Message
 
-AC1: There should be a log in message to let the user know if they are logged in to their account.
+Label: must-have
 
-AC2: It should be a clear message for the user to see.
 #### Logout
 
 AC1: There needs to be a easy way to logout of their account.
@@ -93,6 +103,28 @@ AC1: There needs to be a easy way to logout of their account.
 AC2: Once logged out the user should know and be able to find a way to log back in.
 
 ![Logout](documentation/user-logout.png)
+
+Label: must-have
+
+#### User Notification
+
+AC1: The user needs to be alerted when something has been edited, deleted or made like a reservation or review.
+
+AC2: The notification should be noticable but not overwhelming.
+
+![Notification](documentation/user-notification.png)
+
+Label: should-have
+
+#### Review System
+
+AC1: The user should be able to leave a review with ease.
+
+AC2: The user should then be able to edit or potenitally delte this review at a later point.
+
+Label: could-have
+
+![Review System](documentation/review-system.png)
 
 ## About
 
