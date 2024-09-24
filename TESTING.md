@@ -74,7 +74,8 @@
 ![](documentation/oak-css-val.png)
 
 ## Javascript
-![Js](documentation)
+![Js](documentation/jshint.png)
+
 ## Python
 
 ### Booking
