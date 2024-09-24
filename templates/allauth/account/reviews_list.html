@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <title>The Oak</title>
 </head>
+
 <body>
     <header>
         <div class="container-fluid">
@@ -90,6 +91,12 @@
             </div>
         </div>
     </header>
+    <main>
+        <h1>Customer Reviews</h1>
+        {% if reviews %}
+        <ul>
+            {% for review in reviews %}
+    </main>
 </body>
 <footer id="links">
     <ul class="ul-footer">
@@ -98,8 +105,8 @@
                     class="fa-brands fa-square-x-twitter"></i></a>
         </li>
         <li class="footer-icons">
-            <a href="https://www.instagram.com" target="_blank" rel="noopener"
-                aria-label="Follow us on Instagram!"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Follow us on Instagram!"><i
+                    class="fa-brands fa-square-instagram"></i></a>
         </li>
         <li class="footer-icons">
             <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Follow us on Facebook!"><i
