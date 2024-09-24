@@ -105,18 +105,28 @@
 
 ## Lighthouse
 
-![](documentation/lighthouse-booking.png)
+![Booking](documentation/lighthouse-booking.png)
 
-![](documentation/lighthouse-delete.png)
+![Delete Review](documentation/lighthouse-delete.png)
 
-![](documentation/lighthouse-desserts.png)
+![Desserts](documentation/lighthouse-desserts.png)
 
-![](documentation/lighthouse-drinks.png)
+![Drinks](documentation/lighthouse-drinks.png)
 
-![](documentation/lighthouse-edit.png)
+![Edit Review](documentation/lighthouse-edit.png)
 
-![](documentation/lighthouse-index.png)
+![Home](documentation/lighthouse-index.png)
 
-![](documentation/lighthouse-info.png)
+![Information](documentation/lighthouse-info.png)
 
-![](documentation/lighthouse-mains.png)
+![Main Meals](documentation/lighthouse-mains.png)
+
+## Compatibility
+
+These images show that the website is compatible with numerous web engines.
+
+![Chrome](documentation/chrome.png)
+
+![Edge](documentation/microsoft-edge.png)
+
+![OperaGx](documentation/operagx.png)
