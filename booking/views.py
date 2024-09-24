@@ -2,8 +2,8 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.views import View
 from django.http import HttpResponse
 from django.contrib import admin
-from .forms import reservationForm, ReviewForm
-from .models import BookingSystem, Review
+from .forms import reservationForm, reviewForm
+from .models import BookingSystem, Reviews
 from django.contrib.auth.forms import UserCreationForm
 from .forms import RegisterForm
 from django.contrib.auth.decorators import login_required
@@ -109,19 +109,15 @@ def edit_booking(request, booking_id):
                   {'form': form, 'booking': booking})
 
 @login_required
-def create_review(request, booking_id):
-    booking = get_object_or_404(BookingSystem, id=booking_id, user=request.user)
-
+def create_review(request):
     if request.method == 'POST':
         form = reviewForm(request.POST)
         if form.is_valid():
-            reviews = form.save(commit=False)
-            reviews.user = request.user
-            reviews.booking = booking
-            reviews.save()
-            return redirect('index.html', booking_id=booking.id)
-
+            review = form.save(commit=False)
+            review.user = request.user
+            review.save()
+            return redirect('index.html')
     else:
         form = reviewForm()
 
-    return render(request, 'index.html', {'form': form, 'booking': booking})
+    return render(request, 'allauth/account/create_review.html', {'form': form})
