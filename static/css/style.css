@@ -43,6 +43,24 @@ ul.ul-footer {
     text-align: center;
 }
 
+.create_review_link{
+    background-color: rgba(225, 179, 130, 1);
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    font-family: 'Dancing Script';
+    text-decoration: underline;
+    font-size: large
+}
+
+.create_review_div{
+    text-align: center;
+}
+
+.review-list{
+    margin-top: 10px;
+}
+
 #menu {
     font-weight: 600;
     width: fit-content;
@@ -255,12 +273,31 @@ footer{
     font-family: 'Dancing Script', Arial, Helvetica, sans-serif;
     font-size: x-large;
     text-align: center;
-    margin-bottom: 200px;
+    margin-bottom: 270px;
 }
 
 .contact-info-text{
     font-family: 'Dancing Script', Arial, Helvetica, sans-serif;
     text-align: center;
+}
+
+a.edit-button{
+    color: #000000;
+    background-color: rgba(225, 179, 130, 1);
+    padding: 5px;
+}
+
+a.delete-button{
+    color: #000000;
+    background-color: rgba(225,179,130,1);
+    padding: 5px;
+}
+
+.delete-heading{
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    margin-top: 20px;
 }
 
 .welcome-heading, .about{
@@ -455,7 +492,7 @@ h2.info-title {
 }
 
 p.register-link {
-    margin-top: 340px;
+    margin-top: 400px;
 }
 
 @media screen and (max-width: 768px) {
