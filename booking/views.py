@@ -125,3 +125,9 @@ def create_review(request):
 def reviews_list(request):
     reviews = Reviews.objects.all().order_by('-created_at')
     return render(request, 'allauth/account/reviews_list.html', {'reviews': reviews})
+
+@login_required
+def edit_review(request, review_id):
+
+@login_required
+def delete_review(request, review_id):
