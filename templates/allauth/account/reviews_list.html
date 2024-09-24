@@ -1,0 +1,127 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="The Oak - Fine dining restaurant offering high class menus,
+    booking system and more. Experience a wide range of cuisine.">
+    <meta name="keywords" content="restaurant, dining, reservations, fine dining, The Oak, booking">
+    <meta name="author" content="The Oak Restaurant">
+    <link rel="icon" href="{%static 'images/icons8-oak-16.png'%}">
+    <link rel="icon" href="{%static 'images/icons8-oak-32.png'%}">
+    <link rel="icon" type="image/x-icon" href="{% static 'images/icons8-oak-32' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>The Oak</title>
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col heading bg">
+                    <h1 id="name">
+                        The Oak
+                    </h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <ul id="menu" class="list-inline col-md-12 d-flex justify-content-around">
+                        <li class="menu-home">
+                            <div class="">
+                                <a href="index.html" aria-label="Link to home page">
+                                    <span class="span_menu_home">
+                                        Home
+                                    </span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="menu-info">
+                            <a href="info.html" aria-label="Link to info page">
+                                <span>
+                                    Information
+                                </span>
+                            </a>
+                        </li>
+                        <li class="menu-menu">
+                            <div class="dropdown">
+                                <div class="menu-heading">
+                                    <button class="dropbtn">Menu</button>
+                                    <div class="dropdown-content">
+                                        <a href="menu-starters.html" aria-label="Link to starter menu">
+                                            Starters
+                                        </a>
+                                        <a href="menu-main.html" aria-label="link to main courses">
+                                            Main Course
+                                        </a>
+                                        <a href="menu-desserts.html" aria-label="link to dessert menu">
+                                            Desserts
+                                        </a>
+                                        <a href="menu-drinks.html" aria-label="link to drinks menu">
+                                            Drinks
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu-booking">
+                            <a href="booking.html" aria-label="link to booking page">
+                                <span>
+                                    Booking
+                                </span>
+                            </a>
+                        <li class="menu-review">
+                            <a href="reviews_list.html">Review</a>
+                        </li>
+                        </li>
+                        {% if user.is_authenticated and user.is_staff %}
+                        <li class="menu-admin">
+                            <a href="{% url 'admin:index' %}" aria-label="Link to admin page">
+                                <span>Staff</span>
+                            </a>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+<footer id="links">
+    <ul class="ul-footer">
+        <li class="footer-icons">
+            <a href="https://www.x.com" target="_blank" rel="noopener" aria-label="Follow us on X!"><i
+                    class="fa-brands fa-square-x-twitter"></i></a>
+        </li>
+        <li class="footer-icons">
+            <a href="https://www.instagram.com" target="_blank" rel="noopener"
+                aria-label="Follow us on Instagram!"><i class="fa-brands fa-square-instagram"></i></a>
+        </li>
+        <li class="footer-icons">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Follow us on Facebook!"><i
+                    class="fa-brands fa-square-facebook"></i></a>
+        </li>
+        <li class="footer-icons">
+            <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="Watch us on Youtube!"><i
+                    class="fa-brands fa-square-youtube"></i></a>
+        </li>
+    </ul>
+</footer>
+<script>
+    setTimeout(function () {
+        if ($('#msg').length > 0) {
+            $('#msg').remove();
+        }
+    }, 2000)
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/17b1279bab.js" crossorigin="anonymous"></script>
+
+
+</html>
