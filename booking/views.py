@@ -128,6 +128,8 @@ def reviews_list(request):
 
 @login_required
 def edit_review(request, review_id):
+    review = get_object_or_404(Reviews, id=review_id, user=request.user)
 
 @login_required
 def delete_review(request, review_id):
+    review = get_object_or_404(Reviews, id=review_id, user=request.user)
