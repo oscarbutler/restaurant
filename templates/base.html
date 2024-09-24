@@ -75,6 +75,9 @@
                                     Booking
                                 </span>
                             </a>
+                        <li class="menu-review">
+                            <a href="reviews_list.html">Review</a>
+                        </li>
                         </li>
                         {% if user.is_authenticated and user.is_staff %}
                         <li class="menu-admin">
@@ -88,13 +91,13 @@
             </div>
         </div>
     </header>
-    <main>
+ 
         <div id="content">
             {% include 'allauth/account/messages.html' %}
         </div>
         {% block content %}
         {% endblock %}
-    </main>
+
     <footer id="links">
         <ul class="ul-footer">
             <li class="footer-icons">
