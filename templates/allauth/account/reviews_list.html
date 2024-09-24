@@ -92,34 +92,38 @@
         </div>
     </header>
     <main>
-        <div id="content">
-            {% include 'allauth/account/messages.html' %}
-        </div>
-        {% block content %}
-        {% endblock %}
-        <h1 class="reviews_title">Customer Reviews</h1>
-        <div class="create_review_div">
-            <a href="create_review.html" class="create_review_link">Create a review here!</a>
-        </div>
-        {% if reviews %}
-        <ul>
-            {% for review in reviews %}
-            <li>
-                <strong>{{ review.name }}</strong>
-                ({{ review.created_at|date:"F j, Y, g:i a" }})
-                <p>{{ review.review_comment }}</p>
+        <div class="container">
+            <div id="content">
+                {% include 'allauth/account/messages.html' %}
+            </div>
+            {% block content %}
+            {% endblock %}
+            <h1 class="reviews_title">Customer Reviews</h1>
+            <div class="create_review_div">
+                <a href="create_review.html" class="create_review_link">Create a review here!</a>
+            </div>
+            {% if reviews %}
+            <ul>
+                <div class="reviews-list-container">
+                    {% for review in reviews %}
+                    <li>
+                        <strong>{{ review.name }}</strong>
+                        ({{ review.created_at|date:"F j, Y, g:i a" }})
+                        <p>{{ review.review_comment }}</p>
 
-                {% if review.user == request.user %}
-                <a href="{% url 'edit_review' review.id %}" class="edit-button">Edit</a> |
-                <a href="{% url 'delete_review' review.id %}" class="delete-button"
-                    onclick="return confirm('Are you sure you want to delete this review?');">Delete</a>
-                {% endif %}
-            </li>
-            {% endfor %}
-        </ul>
-        {% else %}
-        <p>No reviews yet. Be the first to leave a review!</p>
-        {% endif %}
+                        {% if review.user == request.user %}
+                        <a href="{% url 'edit_review' review.id %}" class="edit-button">Edit</a> |
+                        <a href="{% url 'delete_review' review.id %}" class="delete-button"
+                            onclick="return confirm('Are you sure you want to delete this review?');">Delete</a>
+                        {% endif %}
+                    </li>
+                    {% endfor %}
+                </div>
+            </ul>
+            {% else %}
+            <p>No reviews yet. Be the first to leave a review!</p>
+            {% endif %}
+        </div>
     </main>
 </body>
 <footer id="linksone">
