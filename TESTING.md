@@ -141,11 +141,11 @@ These images show that the website is compatible with numerous web engines.
 | --- | --- | --- |
 | Customer Reservation| The user is easilty able to make a reservation for the restaurant | ![Reservation](documentation/max-reservations.png) |
 | Availability Of Tables | If there is too many bookings and not enough tables the user should be told so | ![MaxReservations](documentation/max-reservations.png) |
-| View Details Of Reservation | The user should be able to view their bookings and see the details of their reservation|
+| View Details Of Reservation | The user should be able to view their bookings and see the details of their reservation| ![Details](documentation/details.png) | 
 | Device Compatibility | The website should be able to be used on difference devices| ![Responsiveness](documentation/responsive-one.png) | 
-| View Menu | The user should be able to see the different menus with ease|  |
+| View Menu | The user should be able to see the different menus with ease| ![Meals](documentation/meals.png) |
 | Delete Reservation | The user should be able to delete the reservation with ease | ![Delete](documentation/view-booking.png) |
 | Logout | The user should be able to logout easily| ![Logout](documentation/logout.png) |
 | Login | The user should be able to login with ease| ![Login](documentation/login.png) |
 | No Backdated Bookings| When the user is entering the form an validation error should appear saying that they can't book a date before the present day | ![Backdate](documentation/backdate-img.png) |
-|||
+| Notification when editing, making and deleting booking| The user should be able to tell whether or not they have made a change to a reservation | ![Notification](documentation/Notifiction.png) |
