@@ -21,6 +21,18 @@ label{
     color: #fff;
 }
 
+ul.ul-footer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    list-style: none;
+}
+
+.menu-review{
+    padding: 10px;
+    text-align: center;
+}
+
 .menu-booking {
     padding: 10px;
     text-align: center;
@@ -83,7 +95,7 @@ footer{
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
-    position: sticky;
+    position: relative;
     bottom: 0;
     width: 100%;
     background-color: rgba(225,179,130,1);
