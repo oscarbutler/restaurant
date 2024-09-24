@@ -91,7 +91,13 @@
         </div>
     </header>
     <main>
-        
+        <h1>Edit Your Review</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Save Changes</button>
+        </form>
+        <a href="{% url 'reviews_list' %}">Cancel</a>
     </main>
     <footer id="links">
         <ul class="ul-footer">
