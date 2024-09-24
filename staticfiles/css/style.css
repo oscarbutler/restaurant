@@ -355,6 +355,14 @@ button#nextImage{
     border-radius: 5px;
 }
 
+.reviews-list-container {
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #d3d3d3;
+    margin-top: 10px;
+}
+
 .reviews-list-container::-webkit-scrollbar {
     width: 8px;
 }
