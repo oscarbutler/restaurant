@@ -67,32 +67,38 @@
 
 ## CSS
 
-![](documentation/oak-css.png)
+![](documentation/oak-css-val.png)
 
 ## Javascript
-
+![Js](documentation)
 ## Python
 
 ### Booking
 
 #### Admin
-
+![](documentation/admin-val.png)
 #### Apps
-
+![](documentation/val-app.png)
 #### Constants
-
+![](documentation/constants-validation.png)
 #### Forms
-
+![](documentation/forms-val.png)
 #### Models
-
+![](documentation/val-models.png)
 #### Urls
-
+![](documentation/val-urls.png)
 #### Views
-
+![](documentation/val-views.png)
 ### Restaurant
 
 #### Urls
-
+![](documentation/val-urls-two.png)
 #### Asgi
-
+![](documentation/val-asgi.png)
 #### Wsgi
+![](documentation/val-wsgi.png)
+## Responsiveness
+
+![Responsiveness](documentation/responsive-one.png)
+
+![Responsiveness](documentation/responsive-two.png)
