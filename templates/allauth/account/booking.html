@@ -47,7 +47,7 @@
                         </li>
                         <li class="menu-menu">
                             <div class="dropdown">
-                                <span class="menu-heading">
+                                <div class="menu-heading">
                                     <button class="dropbtn">Menu</button>
                                     <div class="dropdown-content">
                                         <a href="menu-starters.html" aria-label="Link to starter menu">
@@ -63,7 +63,7 @@
                                             Drinks
                                         </a>
                                     </div>
-                                </span>
+                                </div>
                             </div>
                         </li>
                         <li class="menu-booking">
@@ -73,6 +73,13 @@
                                 </span>
                             </a>
                         </li>
+                        {% if user.is_authenticated and user.is_staff %}
+                        <li class="menu-admin">
+                            <a href="{% url 'admin:index' %}" aria-label="Link to admin page">
+                                <span>Staff</span>
+                            </a>
+                        </li>
+                        {% endif %}
                     </ul>
                 </div>
             </div>
@@ -101,22 +108,24 @@
         {% endif %}
     </main>
     <footer id="linksone">
-        <li>
-            <a href="https://www.x.com" target="_blank" rel="noopener" aria-label="Follow us on X!"><i
-                    class="fa-brands fa-square-x-twitter"></i></a>
-        </li>
-        <li>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Follow us on Instagram!"><i
-                    class="fa-brands fa-square-instagram"></i></a>
-        </li>
-        <li>
-            <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Follow us on Facebook!"><i
-                    class="fa-brands fa-square-facebook"></i></a>
-        </li>
-        <li>
-            <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="Watch us on Youtube!"><i
-                    class="fa-brands fa-square-youtube"></i></a>
-        </li>
+        <ul class="ul-footer">
+            <li class="footer-icons">
+                <a href="https://www.x.com" target="_blank" rel="noopener" aria-label="Follow us on X!"><i
+                        class="fa-brands fa-square-x-twitter"></i></a>
+            </li>
+            <li class="footer-icons">
+                <a href="https://www.instagram.com" target="_blank" rel="noopener"
+                    aria-label="Follow us on Instagram!"><i class="fa-brands fa-square-instagram"></i></a>
+            </li>
+            <li class="footer-icons">
+                <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Follow us on Facebook!"><i
+                        class="fa-brands fa-square-facebook"></i></a>
+            </li>
+            <li class="footer-icons">
+                <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="Watch us on Youtube!"><i
+                        class="fa-brands fa-square-youtube"></i></a>
+            </li>
+        </ul>
     </footer>
     <script>
         setTimeout(function () {
