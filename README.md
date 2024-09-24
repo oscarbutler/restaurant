@@ -207,6 +207,10 @@ while being able to navigate with ease.
 
 ![](documentation/oak-booking-mobile.png)
 
+![Flowchart](documentation/flow-chart.png)
+
+This was a plan I made which helped me start this as I could visualise what interlinked to eachother.
+
 ## Features
 
 - A booking system is one of the main features. This allows the user to easily make a reservation at this restaurant
@@ -276,6 +280,11 @@ I have used this particular favicon because it is an oak tree leaf. This may be 
 - Whitenoise to help handle the static files.
 - W3C Validator is used to make sure all the html is valid
 - W3C CSS validator was used to check the css was all valid
+- Draw.io to create the flowchart
+- W3C Validator: was used to validate HTML5 code
+- W3C CSS validator: was used to validate CSS code 
+- JShint: was used to validate JS code
+- PEP8: was used to validate Python code
 
 ## Testing
 
