@@ -5,5 +5,9 @@ Create Review
 
 {% block content %}
 {% load static %}
-
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit Review</button>
+</form>
 {% endblock %}
