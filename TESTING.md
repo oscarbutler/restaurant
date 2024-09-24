@@ -102,3 +102,21 @@
 ![Responsiveness](documentation/responsive-one.png)
 
 ![Responsiveness](documentation/responsive-two.png)
+
+## Lighthouse
+
+![](documentation/lighthouse-booking.png)
+
+![](documentation/lighthouse-delete.png)
+
+![](documentation/lighthouse-desserts.png)
+
+![](documentation/lighthouse-drinks.png)
+
+![](documentation/lighthouse-edit.png)
+
+![](documentation/lighthouse-index.png)
+
+![](documentation/lighthouse-info.png)
+
+![](documentation/lighthouse-mains.png)
