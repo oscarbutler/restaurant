@@ -234,6 +234,7 @@ I have used this particular favicon because it is an oak tree leaf. This may be 
 - HTML is used to make the main structure of the pages
 - CSS is used to decorate and style all the different pages.
 - Javascript is used to create interactive section in the website
+- Django is the framework of python that was used.
 - Bootstrap was also used to create an interactive website.
 - Elephant Sql was used in order to host the database and store the data we will recieve.
 - Heroku was the website that was used in order to deploy the website.
@@ -344,3 +345,35 @@ View if everything looks correct and finally create the database.
 Obtain the url from elephant sql and use this to link to the project
 
 ![](documentation/sql-info.png)
+
+### Local
+
+- Clone or create a repository
+
+- Install Dependencies
+
+*Note:*
+  - `pip3 install -r requirements.txt`
+
+This will download the neccessities for this project.
+
+- Set up Environmental Variables
+
+*Note:*
+- Secret Key and Database Url in env.py
+
+- Apply migrations
+
+*Note:*
+- `python3 manage.py makemigrations`
+- `python3 manage.py migrate`
+
+- Collect Static
+
+*Note:*
+- `Python3 manage.py collectstatic`
+
+- Run server
+
+*Note:*
+- `python3 manage.py runserver`
