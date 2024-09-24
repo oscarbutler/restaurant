@@ -26,7 +26,11 @@
 | Twitter icon in the footer | Click on the Twitter icon | The user is redirected to the Twitter page | Yes | Yes | It should open the link in another tab or page |
 | YouTube icon in the footer | Click on the YouTube icon | The user is redirected to the YouTube page | Yes | Yes | It should open the link in another tab or page |
 | Edit Function | Edits reservation | Succesfully change the reservation | Yes | Yes | --- |
-
+| Create Review | Create a text review | A review should be submitted | Yes | Yes | --- |
+| Edit Review | Review should be edited | Review is edited | Yes | Yes | --- |
+| Delete Review | Review should be deleted | Review is deleted | Yes | Yes | --- |
+| Staff Link | Directed to admin page | The admin page should appear only for staff | Yes | Yes | --- |
+| --- | --- | --- | --- | --- | --- |
 ## Validation
 
 ### Home Page
@@ -130,3 +134,18 @@ These images show that the website is compatible with numerous web engines.
 ![Edge](documentation/microsoft-edge.png)
 
 ![OperaGx](documentation/operagx.png)
+
+## User Stories
+
+| User Story | Requirement met | Image |
+| --- | --- | --- |
+| Customer Reservation| The user is easilty able to make a reservation for the restaurant | ![Reservation](documentation/max-reservations.png) |
+| Availability Of Tables | If there is too many bookings and not enough tables the user should be told so | ![MaxReservations](documentation/max-reservations.png) |
+| View Details Of Reservation | The user should be able to view their bookings and see the details of their reservation|
+| Device Compatibility | The website should be able to be used on difference devices| ![Responsiveness](documentation/responsive-one.png) | 
+| View Menu | The user should be able to see the different menus with ease|  |
+| Delete Reservation | The user should be able to delete the reservation with ease | ![Delete](documentation/view-booking.png) |
+| Logout | The user should be able to logout easily| ![Logout](documentation/logout.png) |
+| Login | The user should be able to login with ease| ![Login](documentation/login.png) |
+| No Backdated Bookings| When the user is entering the form an validation error should appear saying that they can't book a date before the present day | ![Backdate](documentation/backdate-img.png) |
+|||
