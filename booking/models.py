@@ -5,6 +5,7 @@ from datetime import time
 from .constants import different_times, amount_of_people
 import datetime
 
+
 class BookingSystem(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
     name = models.CharField(max_length=50)
@@ -13,6 +14,7 @@ class BookingSystem(models.Model):
     date = models.DateField()
     time = models.TimeField(choices=different_times)
     number_of_people = models.IntegerField(choices=amount_of_people)
+
 
 class Reviews(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)

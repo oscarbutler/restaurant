@@ -23,7 +23,8 @@ class reservationForm(forms.ModelForm):
     def clean_date(self):
         booking_clean_date = self.cleaned_data.get('date')
         if booking_clean_date and booking_clean_date < date.today():
-            raise forms.ValidationError("You cant make a booking for a past date.")
+            raise forms.ValidationError("""You cant make a booking for a
+            past date.""")
         return booking_clean_date
 
     def TableLimit(self):
@@ -34,7 +35,8 @@ class reservationForm(forms.ModelForm):
         if date and time:
             AmountOfBookings = BookingSystem.objects.filter(date=date, time=time).count()
             if AmountOfBookings >= 10:
-                raise forms.ValidationError("""There are no available tables for this time slot. Please choose a different time.""")
+                raise forms.ValidationError("""There are no available tables
+                for this time slot. Please choose a different time.""")
 
         return tables
 
@@ -48,7 +50,9 @@ class reservationForm(forms.ModelForm):
         if date and time:
             reservations = BookingSystem.objects.filter(date=date, time=time).count()
             if reservations >= max_reservations:
-                raise forms.ValidationError("""There are no available reservations for this time slot. Please choose a different date or time.""")
+                raise forms.ValidationError("""There are no available
+                reservations for this time slot. Please choose a different
+                date or time.""")
 
         return reservation_data
 
@@ -67,10 +71,11 @@ class RegisterForm(UserCreationForm):
             user.save()
         return user
 
+
 class reviewForm(forms.ModelForm):
     class Meta:
         model = Reviews
-        fields = ['name','review_comment']
+        fields = ['name', 'review_comment']
         widgets = {
             'review_comment': forms.Textarea(attrs={'rows': 5}),
         }

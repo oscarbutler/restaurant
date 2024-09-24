@@ -10,6 +10,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from django.core.exceptions import PermissionDenied
 
+
 def message(request):
     return HttpResponse("Test")
 
@@ -100,13 +101,15 @@ def edit_booking(request, booking_id):
         form = reservationForm(request.POST, instance=booking)
         if form.is_valid():
             form.save()
-            messages.success(request, 'You Have Successfully Changed Your Reservation!')
+            messages.success(request, """You Have Successfully Changed
+            Your Reservation!""")
             return redirect('view_bookings')
     else:
         form = reservationForm(instance=booking)
 
     return render(request, 'allauth/account/edit-booking.html',
                   {'form': form, 'booking': booking})
+
 
 @login_required
 def create_review(request):
@@ -116,15 +119,17 @@ def create_review(request):
             review = form.save(commit=False)
             review.user = request.user
             review.save()
-            return redirect('index.html')
+            return redirect('reviews_list.html')
     else:
         form = reviewForm()
 
     return render(request, 'allauth/account/create_review.html', {'form': form})
 
+
 def reviews_list(request):
     reviews = Reviews.objects.all().order_by('-created_at')
     return render(request, 'allauth/account/reviews_list.html', {'reviews': reviews})
+
 
 @login_required
 def edit_review(request, review_id):
@@ -133,17 +138,19 @@ def edit_review(request, review_id):
         form = reviewForm(request.POST, instance=review)
         if form.is_valid():
             form.save()
-            messages.success(request, 'You Have Successfully Changed Your Review!')
+            messages.success(request, """You Have Successfully Changed
+            Your Review!""")
             return redirect('reviews_list')
     else:
         form = reviewForm(instance=review)
 
     return render(request, 'allauth/account/edit_review.html', {'form': form})
 
+
 @login_required
 def delete_review(request, review_id):
     review = get_object_or_404(Reviews, id=review_id, user=request.user)
-    
+
     if request.method == 'POST':
         review.delete()
         messages.success(request, 'You Have Successfully Deleted Your Review!')
