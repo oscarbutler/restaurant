@@ -143,3 +143,10 @@ def edit_review(request, review_id):
 @login_required
 def delete_review(request, review_id):
     review = get_object_or_404(Reviews, id=review_id, user=request.user)
+    
+    if request.method == 'POST':
+        review.delete()
+        messages.success(request, 'You Have Successfully Deleted Your Review!')
+        return redirect('reviews_list')
+
+    return render(request, 'confirm_delete.html', {'review': review})
