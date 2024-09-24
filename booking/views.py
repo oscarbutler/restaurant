@@ -129,6 +129,16 @@ def reviews_list(request):
 @login_required
 def edit_review(request, review_id):
     review = get_object_or_404(Reviews, id=review_id, user=request.user)
+    if request.method == 'POST':
+        form = reviewForm(request.POST, instance=review)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'You Have Successfully Changed Your Review!')
+            return redirect('reviews_list')
+    else:
+        form = reviewForm(instance=review)
+
+    return render(request, 'allauth/account/edit_review.html', {'form': form})
 
 @login_required
 def delete_review(request, review_id):
