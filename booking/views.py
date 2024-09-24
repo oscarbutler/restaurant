@@ -149,4 +149,4 @@ def delete_review(request, review_id):
         messages.success(request, 'You Have Successfully Deleted Your Review!')
         return redirect('reviews_list')
 
-    return render(request, 'confirm_delete.html', {'review': review})
+    return render(request, 'allauth/account/confirm_delete.html', {'review': review})
