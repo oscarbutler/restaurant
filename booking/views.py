@@ -121,3 +121,7 @@ def create_review(request):
         form = reviewForm()
 
     return render(request, 'allauth/account/create_review.html', {'form': form})
+
+def reviews_list(request):
+    reviews = Reviews.objects.all().order_by('-created_at')
+    return render(request, 'allauth/account/reviews_list.html', {'reviews': reviews})
