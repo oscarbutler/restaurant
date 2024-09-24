@@ -4,7 +4,7 @@ Desserts
 {% endblock %}
 {% block content %}
 {% load static %}
-<main>
+
     <div class="login-or-out">
         {% if user.is_authenticated %}
         <p>Logged in as "{{ user.username }}"<a href="{% url 'logout' %}" class="logoutlink" aria-label="logout link"> Logout</a></p>
@@ -49,5 +49,5 @@ Desserts
 
     <div class="meal-name">Mango Sorbet with Prosecco:</div>
     Refreshing mango sorbet served in a chilled glass, topped with a splash of Prosecco and a mint sprig.
-</main>
+
 {% endblock %}

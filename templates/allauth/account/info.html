@@ -5,26 +5,27 @@ Info
 
 {% block content %}
 {% load static %}
-<main>
-    <div class="opening-times-section">
-        <div class="login-or-out">
-            {% if user.is_authenticated %}
-            <p>Logged in as "{{ user.username }}"<a href="{% url 'logout' %}" class="logoutlink" aria-label="Logout link"> Logout</a></p>
-            {% else %}
-            <p>Please <a href="{% url 'login' %}" class="logoutlink" aria-label="Login link">Login</a> here</p>
-            {% endif %}
-        </div>
-        <h2 class="info-title">Information</h2>
-        <h3 class="open-times">Opening Times</h2>
-            <p class="opening-times-text">
-                Monday 13:00-22:00<br>
-                Tuesday 13:00-22:00<br>
-                Wednesday 13:00-22:00<br>
-                Thursday 13:00-22:00<br>
-                Friday 13:00-22:00<br>
-                Saturday 13:00-22:00<br>
-                Sunday 13:00-22:00<br>
-            </p>
-            <div>
-</main>
-{% endblock %}
+<div class="opening-times-section">
+    <div class="login-or-out">
+        {% if user.is_authenticated %}
+        <p>Logged in as "{{ user.username }}"<a href="{% url 'logout' %}" class="logoutlink" aria-label="Logout link">
+                Logout</a></p>
+        {% else %}
+        <p>Please <a href="{% url 'login' %}" class="logoutlink" aria-label="Login link">Login</a> here</p>
+        {% endif %}
+    </div>
+    <h2 class="info-title">Information</h2>
+    <h3 class="open-times">Opening Times</h3>
+    <p class="opening-times-text">
+        Monday 13:00-22:00<br>
+        Tuesday 13:00-22:00<br>
+        Wednesday 13:00-22:00<br>
+        Thursday 13:00-22:00<br>
+        Friday 13:00-22:00<br>
+        Saturday 13:00-22:00<br>
+        Sunday 13:00-22:00<br>
+    </p>
+    <div>
+    </div>
+</div>
+    {% endblock %}
