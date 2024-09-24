@@ -45,7 +45,7 @@ class reservationForm(forms.ModelForm):
         date = reservation_data.get('date')
         time = reservation_data.get('time')
 
-        max_reservations = 4
+        max_reservations = 10
 
         if date and time:
             reservations = BookingSystem.objects.filter(date=date, time=time).count()
