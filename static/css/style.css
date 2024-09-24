@@ -339,6 +339,22 @@ button#nextImage{
     background-color: rgba(225, 179, 130, 1);
 }
 
+.reviews-list-container {
+    max-height: 400px; 
+    overflow-y: auto; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.review-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
 .about-text{
     text-align: center;
     font-size:large;
