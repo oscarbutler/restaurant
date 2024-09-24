@@ -355,6 +355,22 @@ button#nextImage{
     border-radius: 5px;
 }
 
+.reviews-list-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.reviews-list-container::-webkit-scrollbar-thumb {
+    background-color: #888;
+}
+
+.reviews-list-container::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.dessert-menu{
+    margin-bottom: 40px;
+}
+
 .about-text{
     text-align: center;
     font-size:large;
