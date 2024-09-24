@@ -271,6 +271,10 @@ I learnt how to add django messages using this [video](https://www.youtube.com/w
 
 I learnt and used the drop down menu shown in this website for the 'menu' function in the header through this website [W3School](https://www.w3schools.com/howto/howto_css_dropdown.asp) this replaced my old one which moved other features when hovered over. I used both the html and css that was from this page of the website due to this header being a lot more efficient then my own one I previously created.
 
+I learnt how to do the back button using javascript from this ![website](https://www.w3schools.com/jsref/met_his_back.asp)
+
+I also learnt how to do the data time format from this ![website](https://pythonexamples.org/python-datetime-format/)
+
 ## Bugs
 
 ### Solved Bugs
@@ -286,6 +290,8 @@ whitenoise storage. These errors on happened wheb debug was false, this made it 
 
 There is one unsolved bug where due to the login template, after you go on the log in page the url will have 'login/'
 on it which can cause problems. This is a bug that I was unable to fix.
+
+- An unsolved bug is that in the validation some python was too long for the validation which caused it to not be perfectly validated.
 
 ### Mistakes
 
